@@ -106,4 +106,18 @@ func reverseLines(_ line: Int) {
     }
 
 
+    func rollDiceSum(n: Int, sum: Int, choices: inout[Int]) {
+        if n == 0 {
+            print(choices)
+        } else {
+            for i in 1...6 {
+                choices.append(i)
+                
+                rollDiceSum(n: n-1, sum:sum, choices: &choices)
+                
+            }
+        }
+    }
+    
+    
 }

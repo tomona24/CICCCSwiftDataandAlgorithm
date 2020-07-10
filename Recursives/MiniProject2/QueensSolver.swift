@@ -18,58 +18,39 @@ import Foundation
 var count = 0
 func solveQueens(board: inout Board) {
     var cols = Array(0..<board.size)
-    searchRow(board: &board, row: 0, col: &cols, numQ: 0, lastCol: nil)
+    var countCol = 0;
+    searchRow(board: &board, row: 0, col: &cols, numQ: 0, lastCol: nil, countCol: 0)
 }
 
-func searchRow(board: inout Board, row: Int, col: inout [Int], numQ: Int, lastCol :Int?) {
-    print(row, col, numQ, lastCol)
-    if row == 0 && col.count == 0 {
+func searchRow(board: inout Board, row: Int, col: inout [Int], numQ: Int, lastCol :Int?, countCol: Int) {
+    count += 1
+    if row == 0 && col.count == board.size - 1 {
         return
     }
     if numQ == board.size{
-        count += 1
         print(board.description)
-        col = Array(0..<board.size)
-//        return
-        if let lastCol = lastCol{
-            board.remove(row: row - 1, col: lastCol)
-        }
-    } else if row >= board.size && numQ > 0 || col.count <= 0 && numQ > 0{
-        print("remove")
-        if let lastCol = lastCol{
+        return
+    }
+    if row >= board.size && numQ > 0 || countCol >= col.count && numQ > 0{
+            if let lastCol = lastCol{
             col.append(lastCol)
             board.remove(row: row - 1, col: lastCol)
         }
     }
     else {
-        if col.count > 0 {
-            let popCol = col.remove(at: 0)
-            if board.isSafe(row: row, col: popCol) {
-                print("place")
-
+        if col.count > 0 && countCol < board.size {
+            if board.isSafe(row: row, col: col[countCol]) {
+                let popCol = col.remove(at: countCol)
                 board.place(row: row, col: popCol)
-                print(board.description)
-
                 searchRow(board: &board, row: row + 1, col: &col
-                    , numQ: numQ + 1, lastCol: popCol)
+                    , numQ: numQ + 1, lastCol: popCol, countCol: 0 )
             }
-            if col.count == 1 && row == 7 {
-                col.append(popCol);
-                print("remove")
-                if let lastCol = lastCol{
-                    col.append(lastCol)
-                    board.remove(row: row - 1, col: lastCol)
-                }
-            }
-            else {
-            col.append(popCol);
-            searchRow(board: &board, row: row, col: &col, numQ: numQ, lastCol: lastCol)
-            }
+                searchRow(board: &board, row: row, col: &col, numQ: numQ, lastCol: lastCol, countCol: countCol + 1)
+
         } else {
-            print("next row")
-            searchRow(board: &board, row: row + 1, col: &col, numQ: numQ, lastCol: lastCol)
+            searchRow(board: &board, row: row + 1, col: &col, numQ: numQ, lastCol: lastCol, countCol: 0)
         }
-        
+
     }
 }
 

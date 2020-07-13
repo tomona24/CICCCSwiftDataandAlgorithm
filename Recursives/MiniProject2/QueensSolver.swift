@@ -50,7 +50,6 @@ func searchRow(board: inout Board, row: Int, col: inout [Int], numQ: Int, lastCo
         } else {
             searchRow(board: &board, row: row + 1, col: &col, numQ: numQ, lastCol: lastCol, countCol: 0)
         }
-
     }
 }
 

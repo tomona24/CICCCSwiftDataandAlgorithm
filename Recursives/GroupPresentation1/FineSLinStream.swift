@@ -14,27 +14,6 @@ class TreeNode<Int> {
   var right: TreeNode<Int>?
 }
 
-// 8 10 3 1 7 4 6 13 14
-// [[][]
-// 8
-//Input
-//5 10 (m n)
-//10
-//9
-//8
-//7
-//6
-//5
-//4
-//3
-//2
-//1
-//Output
-//10
-//9
-//8
-//7
-//6 (edited)
 
 
 //func findSmalleInSttream () {

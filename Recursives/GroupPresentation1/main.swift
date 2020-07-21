@@ -7,9 +7,9 @@
 //
 
 import Foundation
+//          0123456789012345678
+let text = "ABTEYNTLLMONEYGHMT"
+let p = "MONEY"
 
-let str = "ANP0P0AGPANNAOOOOMA"
-let p = "GPANN"
-
-let index = findSubstringPattern(str: str, p: p)
+let index = findSubstringPattern(text: text, p: p)
 print(index)

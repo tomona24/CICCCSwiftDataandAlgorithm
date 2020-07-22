@@ -27,6 +27,9 @@ func diameter(tree : String) {
             m += 2
         }
     }
+    print(nodeInfo)
+    print(treeArr)
+    
     for k in 1..<n {
         diameterHelper(nodeNo: k , currentRoute: 0, visited: visited, current: 0, longest: &longest, visitNum: 0)
     }

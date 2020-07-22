@@ -19,12 +19,12 @@ func lowestCommonAncestor(input: String) {
     nodeInfo = [[Int]](repeating: [Int].init(), count: n)
     
 
-    var countNum = 1
+    var countNum = 0
     while (readInput[countNum].count != 1) {
-        print(readInput[countNum])
         let from = readInput[countNum][0]
         let to = readInput[countNum][1]
         nodeInfo[from - 1].append(to)
+        nodeInfo[to - 1].append(from)
     countNum += 1
     }
     

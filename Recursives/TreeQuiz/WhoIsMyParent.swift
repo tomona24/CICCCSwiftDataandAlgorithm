@@ -23,11 +23,14 @@ func whoIsMyParent(tree : String) {
         tree4Who[from - 1].append(to)
         tree4Who[to - 1].append(from)
     }
+    print(nodeInfo)
+    print(tree4Who)
     var tree4Out: [Int] = [Int](repeating: 0, count: n)
     whoIsMyParentHelper( current: 1, n: 0, visited: visited, tree4Out : &tree4Out)
     for i in 1..<tree4Out.count {
         print(tree4Out[i])
     }
+    
 }
 
 

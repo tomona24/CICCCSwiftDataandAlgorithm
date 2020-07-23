@@ -8,4 +8,6 @@
 
 import Foundation
 
-cyclePermutation()
+//cyclePermutation()
+
+repeatingSequence()

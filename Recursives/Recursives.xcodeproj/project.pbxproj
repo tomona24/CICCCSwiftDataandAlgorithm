@@ -21,6 +21,9 @@
 		6273E43724C9031600101062 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E43624C9031600101062 /* Queue.swift */; };
 		6273E43924C909F000101062 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E43824C909F000101062 /* Stack.swift */; };
 		6273E43B24C90A4900101062 /* RepeatingSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E43A24C90A4900101062 /* RepeatingSequence.swift */; };
+		6273E44524CA0A8800101062 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E44424CA0A8800101062 /* main.swift */; };
+		6273E44B24CA0A9E00101062 /* SushiRestrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E44A24CA0A9E00101062 /* SushiRestrant.swift */; };
+		6273E48524CB35A700101062 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E48424CB35A700101062 /* Stack.swift */; };
 		628734B024C68E7700D9E67F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628734AF24C68E7700D9E67F /* main.swift */; };
 		628734B824C696AB00D9E67F /* Diameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628734B724C696AB00D9E67F /* Diameter.swift */; };
 		628734BB24C6D59400D9E67F /* WhoIsMyParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628734BA24C6D59300D9E67F /* WhoIsMyParent.swift */; };
@@ -86,6 +89,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		6273E42A24C8F86700101062 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6273E44024CA0A8800101062 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -161,6 +173,64 @@
 		6273E43624C9031600101062 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		6273E43824C909F000101062 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		6273E43A24C90A4900101062 /* RepeatingSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingSequence.swift; sourceTree = "<group>"; };
+		6273E44224CA0A8800101062 /* SushiRestrant */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SushiRestrant; sourceTree = BUILT_PRODUCTS_DIR; };
+		6273E44424CA0A8800101062 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6273E44A24CA0A9E00101062 /* SushiRestrant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiRestrant.swift; sourceTree = "<group>"; };
+		6273E44D24CA321700101062 /* sushi.21.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.21.out; sourceTree = "<group>"; };
+		6273E44E24CA321700101062 /* sushi.20.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.20.out; sourceTree = "<group>"; };
+		6273E44F24CA321700101062 /* sushi.19.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.19.in; sourceTree = "<group>"; };
+		6273E45024CA321700101062 /* sushi.22.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.22.out; sourceTree = "<group>"; };
+		6273E45124CA321700101062 /* sushi.23.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.23.out; sourceTree = "<group>"; };
+		6273E45224CA321700101062 /* sushi.18.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.18.in; sourceTree = "<group>"; };
+		6273E45324CA321700101062 /* sushisamp.2.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushisamp.2.out; sourceTree = "<group>"; };
+		6273E45424CA321700101062 /* sushi.24.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.24.out; sourceTree = "<group>"; };
+		6273E45524CA321700101062 /* sushi.18.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.18.out; sourceTree = "<group>"; };
+		6273E45624CA321700101062 /* sushi.19.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.19.out; sourceTree = "<group>"; };
+		6273E45724CA321700101062 /* sushi.25.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.25.out; sourceTree = "<group>"; };
+		6273E45824CA321700101062 /* sushisamp.1.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushisamp.1.out; sourceTree = "<group>"; };
+		6273E45924CA321700101062 /* sushi.23.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.23.in; sourceTree = "<group>"; };
+		6273E45A24CA321700101062 /* sushi.17.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.17.in; sourceTree = "<group>"; };
+		6273E45B24CA321700101062 /* sushi.5.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.5.in; sourceTree = "<group>"; };
+		6273E45C24CA321700101062 /* sushi.5.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.5.out; sourceTree = "<group>"; };
+		6273E45D24CA321700101062 /* sushisamp.2.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushisamp.2.in; sourceTree = "<group>"; };
+		6273E45E24CA321700101062 /* sushi.4.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.4.out; sourceTree = "<group>"; };
+		6273E45F24CA321700101062 /* sushi.13.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.13.in; sourceTree = "<group>"; };
+		6273E46024CA321700101062 /* sushi.1.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.1.in; sourceTree = "<group>"; };
+		6273E46124CA321700101062 /* sushi.6.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.6.out; sourceTree = "<group>"; };
+		6273E46224CA321700101062 /* sushi.7.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.7.out; sourceTree = "<group>"; };
+		6273E46324CA321700101062 /* sushi.12.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.12.in; sourceTree = "<group>"; };
+		6273E46424CA321700101062 /* sushi.3.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.3.out; sourceTree = "<group>"; };
+		6273E46524CA321700101062 /* sushi.2.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.2.out; sourceTree = "<group>"; };
+		6273E46624CA321700101062 /* sushi.22.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.22.in; sourceTree = "<group>"; };
+		6273E46724CA321700101062 /* sushi.16.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.16.in; sourceTree = "<group>"; };
+		6273E46824CA321700101062 /* sushi.4.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.4.in; sourceTree = "<group>"; };
+		6273E46924CA321700101062 /* sushi.1.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.1.out; sourceTree = "<group>"; };
+		6273E46A24CA321700101062 /* sushi.11.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.11.in; sourceTree = "<group>"; };
+		6273E46B24CA321700101062 /* sushi.25.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.25.in; sourceTree = "<group>"; };
+		6273E46C24CA321700101062 /* sushi.3.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.3.in; sourceTree = "<group>"; };
+		6273E46D24CA321700101062 /* sushi.21.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.21.in; sourceTree = "<group>"; };
+		6273E46E24CA321700101062 /* sushi.15.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.15.in; sourceTree = "<group>"; };
+		6273E46F24CA321700101062 /* sushi.7.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.7.in; sourceTree = "<group>"; };
+		6273E47024CA321700101062 /* sushi.20.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.20.in; sourceTree = "<group>"; };
+		6273E47124CA321700101062 /* sushi.14.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.14.in; sourceTree = "<group>"; };
+		6273E47224CA321700101062 /* sushi.6.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.6.in; sourceTree = "<group>"; };
+		6273E47324CA321700101062 /* sushisamp.1.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushisamp.1.in; sourceTree = "<group>"; };
+		6273E47424CA321700101062 /* sushi.10.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.10.in; sourceTree = "<group>"; };
+		6273E47524CA321700101062 /* sushi.24.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.24.in; sourceTree = "<group>"; };
+		6273E47624CA321700101062 /* sushi.9.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.9.out; sourceTree = "<group>"; };
+		6273E47724CA321700101062 /* sushi.2.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.2.in; sourceTree = "<group>"; };
+		6273E47824CA321700101062 /* sushi.8.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.8.out; sourceTree = "<group>"; };
+		6273E47924CA321700101062 /* sushi.9.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.9.in; sourceTree = "<group>"; };
+		6273E47A24CA321700101062 /* sushi.14.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.14.out; sourceTree = "<group>"; };
+		6273E47B24CA321700101062 /* sushi.15.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.15.out; sourceTree = "<group>"; };
+		6273E47C24CA321700101062 /* sushi.17.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.17.out; sourceTree = "<group>"; };
+		6273E47D24CA321700101062 /* sushi.16.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.16.out; sourceTree = "<group>"; };
+		6273E47E24CA321700101062 /* sushi.12.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.12.out; sourceTree = "<group>"; };
+		6273E47F24CA321700101062 /* sushi.13.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.13.out; sourceTree = "<group>"; };
+		6273E48024CA321700101062 /* sushi.8.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.8.in; sourceTree = "<group>"; };
+		6273E48124CA321700101062 /* sushi.11.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.11.out; sourceTree = "<group>"; };
+		6273E48224CA321700101062 /* sushi.10.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.10.out; sourceTree = "<group>"; };
+		6273E48424CB35A700101062 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		628734AD24C68E7600D9E67F /* TreeQuiz */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TreeQuiz; sourceTree = BUILT_PRODUCTS_DIR; };
 		628734AF24C68E7700D9E67F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		628734B724C696AB00D9E67F /* Diameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diameter.swift; sourceTree = "<group>"; };
@@ -220,6 +290,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6273E43F24CA0A8800101062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		628734AA24C68E7600D9E67F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,6 +350,7 @@
 				628734AE24C68E7600D9E67F /* TreeQuiz */,
 				628734C224C7363600D9E67F /* LCA */,
 				6273E42D24C8F86700101062 /* ProblemSet2 */,
+				6273E44324CA0A8800101062 /* SushiRestrant */,
 				62095D5E24A2687F00886BB4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -290,6 +368,7 @@
 				628734AD24C68E7600D9E67F /* TreeQuiz */,
 				628734C124C7363600D9E67F /* LCA */,
 				6273E42C24C8F86700101062 /* ProblemSet2 */,
+				6273E44224CA0A8800101062 /* SushiRestrant */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -352,6 +431,78 @@
 				6273E43A24C90A4900101062 /* RepeatingSequence.swift */,
 			);
 			path = ProblemSet2;
+			sourceTree = "<group>";
+		};
+		6273E44324CA0A8800101062 /* SushiRestrant */ = {
+			isa = PBXGroup;
+			children = (
+				6273E44424CA0A8800101062 /* main.swift */,
+				6273E44C24CA321700101062 /* TestCases */,
+				6273E44A24CA0A9E00101062 /* SushiRestrant.swift */,
+				6273E48424CB35A700101062 /* Stack.swift */,
+			);
+			path = SushiRestrant;
+			sourceTree = "<group>";
+		};
+		6273E44C24CA321700101062 /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				6273E44D24CA321700101062 /* sushi.21.out */,
+				6273E44E24CA321700101062 /* sushi.20.out */,
+				6273E44F24CA321700101062 /* sushi.19.in */,
+				6273E45024CA321700101062 /* sushi.22.out */,
+				6273E45124CA321700101062 /* sushi.23.out */,
+				6273E45224CA321700101062 /* sushi.18.in */,
+				6273E45324CA321700101062 /* sushisamp.2.out */,
+				6273E45424CA321700101062 /* sushi.24.out */,
+				6273E45524CA321700101062 /* sushi.18.out */,
+				6273E45624CA321700101062 /* sushi.19.out */,
+				6273E45724CA321700101062 /* sushi.25.out */,
+				6273E45824CA321700101062 /* sushisamp.1.out */,
+				6273E45924CA321700101062 /* sushi.23.in */,
+				6273E45A24CA321700101062 /* sushi.17.in */,
+				6273E45B24CA321700101062 /* sushi.5.in */,
+				6273E45C24CA321700101062 /* sushi.5.out */,
+				6273E45D24CA321700101062 /* sushisamp.2.in */,
+				6273E45E24CA321700101062 /* sushi.4.out */,
+				6273E45F24CA321700101062 /* sushi.13.in */,
+				6273E46024CA321700101062 /* sushi.1.in */,
+				6273E46124CA321700101062 /* sushi.6.out */,
+				6273E46224CA321700101062 /* sushi.7.out */,
+				6273E46324CA321700101062 /* sushi.12.in */,
+				6273E46424CA321700101062 /* sushi.3.out */,
+				6273E46524CA321700101062 /* sushi.2.out */,
+				6273E46624CA321700101062 /* sushi.22.in */,
+				6273E46724CA321700101062 /* sushi.16.in */,
+				6273E46824CA321700101062 /* sushi.4.in */,
+				6273E46924CA321700101062 /* sushi.1.out */,
+				6273E46A24CA321700101062 /* sushi.11.in */,
+				6273E46B24CA321700101062 /* sushi.25.in */,
+				6273E46C24CA321700101062 /* sushi.3.in */,
+				6273E46D24CA321700101062 /* sushi.21.in */,
+				6273E46E24CA321700101062 /* sushi.15.in */,
+				6273E46F24CA321700101062 /* sushi.7.in */,
+				6273E47024CA321700101062 /* sushi.20.in */,
+				6273E47124CA321700101062 /* sushi.14.in */,
+				6273E47224CA321700101062 /* sushi.6.in */,
+				6273E47324CA321700101062 /* sushisamp.1.in */,
+				6273E47424CA321700101062 /* sushi.10.in */,
+				6273E47524CA321700101062 /* sushi.24.in */,
+				6273E47624CA321700101062 /* sushi.9.out */,
+				6273E47724CA321700101062 /* sushi.2.in */,
+				6273E47824CA321700101062 /* sushi.8.out */,
+				6273E47924CA321700101062 /* sushi.9.in */,
+				6273E47A24CA321700101062 /* sushi.14.out */,
+				6273E47B24CA321700101062 /* sushi.15.out */,
+				6273E47C24CA321700101062 /* sushi.17.out */,
+				6273E47D24CA321700101062 /* sushi.16.out */,
+				6273E47E24CA321700101062 /* sushi.12.out */,
+				6273E47F24CA321700101062 /* sushi.13.out */,
+				6273E48024CA321700101062 /* sushi.8.in */,
+				6273E48124CA321700101062 /* sushi.11.out */,
+				6273E48224CA321700101062 /* sushi.10.out */,
+			);
+			path = TestCases;
 			sourceTree = "<group>";
 		};
 		628734AE24C68E7600D9E67F /* TreeQuiz */ = {
@@ -497,6 +648,23 @@
 			productReference = 6273E42C24C8F86700101062 /* ProblemSet2 */;
 			productType = "com.apple.product-type.tool";
 		};
+		6273E44124CA0A8800101062 /* SushiRestrant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6273E44924CA0A8800101062 /* Build configuration list for PBXNativeTarget "SushiRestrant" */;
+			buildPhases = (
+				6273E43E24CA0A8800101062 /* Sources */,
+				6273E43F24CA0A8800101062 /* Frameworks */,
+				6273E44024CA0A8800101062 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SushiRestrant;
+			productName = SushiRestrant;
+			productReference = 6273E44224CA0A8800101062 /* SushiRestrant */;
+			productType = "com.apple.product-type.tool";
+		};
 		628734AC24C68E7600D9E67F /* TreeQuiz */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 628734B424C68E7700D9E67F /* Build configuration list for PBXNativeTarget "TreeQuiz" */;
@@ -607,6 +775,9 @@
 					6273E42B24C8F86700101062 = {
 						CreatedOnToolsVersion = 11.6;
 					};
+					6273E44124CA0A8800101062 = {
+						CreatedOnToolsVersion = 11.6;
+					};
 					628734AC24C68E7600D9E67F = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -653,6 +824,7 @@
 				628734AC24C68E7600D9E67F /* TreeQuiz */,
 				628734C024C7363600D9E67F /* LCA */,
 				6273E42B24C8F86700101062 /* ProblemSet2 */,
+				6273E44124CA0A8800101062 /* SushiRestrant */,
 			);
 		};
 /* End PBXProject section */
@@ -718,6 +890,16 @@
 				6273E43B24C90A4900101062 /* RepeatingSequence.swift in Sources */,
 				6273E43724C9031600101062 /* Queue.swift in Sources */,
 				6273E43524C8F87700101062 /* CyclePerutation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6273E43E24CA0A8800101062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6273E44524CA0A8800101062 /* main.swift in Sources */,
+				6273E48524CB35A700101062 /* Stack.swift in Sources */,
+				6273E44B24CA0A9E00101062 /* SushiRestrant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -993,6 +1175,28 @@
 			};
 			name = Release;
 		};
+		6273E44624CA0A8800101062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2NMRBH7Y3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6273E44724CA0A8800101062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2NMRBH7Y3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		628734B124C68E7700D9E67F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1156,6 +1360,15 @@
 			buildConfigurations = (
 				6273E43024C8F86700101062 /* Debug */,
 				6273E43124C8F86700101062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6273E44924CA0A8800101062 /* Build configuration list for PBXNativeTarget "SushiRestrant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6273E44624CA0A8800101062 /* Debug */,
+				6273E44724CA0A8800101062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

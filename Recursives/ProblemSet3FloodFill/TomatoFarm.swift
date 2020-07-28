@@ -41,19 +41,16 @@ func TomatoFarm() {
                 for i in 0..<4 {
                     let nx = x + dx[i]
                     let ny = y + dy[i]
-                    
                     if nx >= 0 && nx < m && ny >= 0 && ny < n {
-                        if tomatoBox[ny][nx] == 0 && groupMap[ny][nx] == 0 {
+                        if tomatoBox[ny][nx] == 0  {
                             tomatoBox[ny][nx] = current + 1
                             n0 -= 1
                             q.enqueue(item: Square(x: nx, y: ny))
-                            groupMap[ny][nx] = id
+
                             answer = current
                         }
-                        
                     }
                 }
-                
             }
         }
     }
@@ -73,7 +70,7 @@ func TomatoFarm() {
             if tomatoBox[y][x] == 0 {
                 numberOfZero += 1
             }
-            if tomatoBox[y][x] >= 1 && groupMap[y][x] == 0 {
+            if tomatoBox[y][x] >= 1 {
                 id += 1
                 q.enqueue(item:  Square(x: x, y: y))
             }

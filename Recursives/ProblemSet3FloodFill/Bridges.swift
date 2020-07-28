@@ -19,33 +19,76 @@ func Bridges() {
     
     
     let firstLine = readLine()!.split(separator: " ").map {Int(String($0))!}
-    let m = firstLine[0]
+    let mapSize = firstLine[0]
     
     // 2D array (each tomato location)
     var ilandMap = [[Int]]()
-    var groupMap = [[Int]](repeating: [Int](repeating: 0, count: m), count: m)
-    var answer : Int = -1
+    var groupMap = [[Int]](repeating: [Int](repeating: 0, count: mapSize), count: mapSize)
+    var answer : Int = mapSize*mapSize
     
     var q = Queue<Square>()
     
-    func bfs(m: Int, n: Int, n0: inout Int, q: inout Queue<Square>) {
+    for _ in 0..<mapSize {
+        let row = readLine()!.split(separator: " ").map { Int(String($0))! }
+        ilandMap.append(row)
+    }
+    
+    // grouping
+    var id = 1
+    for x in 0..<mapSize {
+        for y in 0..<mapSize {
+            if ilandMap[y][x] == 1 && groupMap[y][x] == 0 {
+                q.enqueue(item: Square(x: x, y: y))
+                
+                while !q.isEmpty() {
+                    let square = q.dequeue()
+                    let x = square!.x
+                    let y = square!.y
+                    if ilandMap[y][x] == 1 {
+                        groupMap[y][x] = id
+                        for i in 0..<4 {
+                            let nx = x + dx[i]
+                            let ny = y + dy[i]
+                            if nx >= 0 && nx < mapSize && ny >= 0 && ny < mapSize {
+                                if ilandMap[ny][nx] == 1 && groupMap[ny][nx] == 0 {
+                                    q.enqueue(item: Square(x: nx, y: ny))
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                id += 1
+            }
+        }
+    }
+    // check the distance from each other
+    
+    func bfs(mapSize: Int,  q: inout Queue<Square>) {
         while !q.isEmpty() {
             let square = q.dequeue()
             let x = square!.x
             let y = square!.y
-            var current = ilandMap[y][x]
+            
+            let current = ilandMap[y][x]
             if ilandMap[y][x] >= 1 {
                 for i in 0..<4 {
                     let nx = x + dx[i]
                     let ny = y + dy[i]
-                    
-                    if nx >= 0 && nx < m && ny >= 0 && ny < n {
+                    if nx >= 0 && nx < mapSize && ny >= 0 && ny < mapSize {
+                        // fill the distance
                         if ilandMap[ny][nx] == 0 && groupMap[ny][nx] == 0 {
                             ilandMap[ny][nx] = current + 1
-                            n0 -= 1
+                            groupMap[ny][nx] = groupMap[y][x]
                             q.enqueue(item: Square(x: nx, y: ny))
-                            groupMap[ny][nx] = id
-                            answer = current
+                        }
+                        
+                        // check the different group or not
+                        if ilandMap[ny][nx] > 0 && groupMap[y][x] != groupMap[ny][nx] {
+                            let smaller = ilandMap[y][x] > ilandMap[ny][nx] ? ilandMap[y][x] : ilandMap[ny][nx]
+                            if smaller < answer {
+                                answer = smaller
+                            }
                         }
                         
                     }
@@ -55,35 +98,27 @@ func Bridges() {
         }
     }
     
-    
-    
-    for _ in 0..<m {
-        let row = readLine()!.split(separator: " ").map { Int(String($0))! }
-        ilandMap.append(row)
-    }
-    
-    var id = 0
-    var numberOfZero = 0
-    
-    for x in 0..<m {
-        for y in 0..<m {
-            if ilandMap[y][x] == 0 {
-                numberOfZero += 1
-            }
-            if ilandMap[y][x] >= 1 && groupMap[y][x] == 0 {
-                id += 1
-                q.enqueue(item:  Square(x: x, y: y))
+    // enqueue the edge of each ilands
+    for x in 0..<mapSize {
+        for y in 0..<mapSize {
+            if ilandMap[y][x] == 1  {
+                var countEdge = 0
+                for i in 0..<4 {
+                    let nx = x + dx[i]
+                    let ny = y + dy[i]
+                    if nx >= 0 && nx < mapSize && ny >= 0 && ny < mapSize {
+                        if groupMap[ny][nx] == 0 {
+                            countEdge += 1
+                        }
+                    }
+                }
+                if countEdge > 0 {
+                    q.enqueue(item:  Square(x: x, y: y))
+                }
             }
         }
     }
-    bfs(m: m, n: m, n0 : &numberOfZero, q: &q)
-    for i in 0..<ilandMap.count {
-        print(ilandMap[i])
-    }
-    if numberOfZero > 0 {
-        
-        print(-1)
-    } else {
-        print(answer)
-    }
+    bfs(mapSize: mapSize, q: &q)
+    
+    print(answer)
 }

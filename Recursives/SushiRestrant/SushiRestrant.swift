@@ -9,52 +9,42 @@
 import Foundation
 
 func SushiRestaurantReview () {
-    var hako = [Int].init()
     
-    func dfs (start: Int, restaurantList: inout [[Int]], check: inout [Bool], checkR: inout [Int: Bool], count: inout Int, countR: inout Int){
-        
-        if countR == checkR.count {
-            return
-        }
-        
+    var kaeri = 0
+    
+    func dfs (start: Int, restaurantList: inout [[Int]], check: inout [Bool], checkR: inout [Int: Bool], count: Int, countR: inout Int){
         check[start] = true;
-        if checkR[start] != nil {
-            checkR[start] = true
-            countR += 1
-
-            print("countup")
-        } else {
-            count += 1
-            print("countup back!")
-        }
-        
-        if countR == checkR.count {
-            print("last")
-            print(checkR)
-            print(count + countR - 1)
-            return
-        }
-        
+        print()
         print(start)
         print(check)
         print(checkR)
         print(count)
         print(countR)
         
+        if countR == checkR.count {
+            print("last")
+            print(count)
+            print(kaeri)
+            return
+        } else {
         
-        print()
-        
-        
-
-        
-
+        if checkR[start] != nil {
+            checkR[start] = true
+            countR += 1
+        }
         
         for v in restaurantList[start] {
             if !check[v] {
-                dfs(start: v, restaurantList: &restaurantList, check: &check, checkR: &checkR, count: &count, countR: &countR)
+                dfs(start: v, restaurantList: &restaurantList, check: &check, checkR: &checkR, count: count + 1, countR: &countR)
             }
+            
+            if countR != checkR.count {
+                print("countup back!")
+                kaeri += 1
+            }
+        
         }
-    
+        }
     }
     
     let firstLine = readLine()!.split(separator: " ").map {Int(String($0))!}
@@ -66,7 +56,7 @@ func SushiRestaurantReview () {
     var check: [Bool] = [Bool](repeating: false, count: n)
     var checkR: [Int: Bool] = [:]
     var count = 0;
-    var countR = 0;
+    var countR = 1;
     
     for i in 0..<nr {
 
@@ -93,5 +83,5 @@ func SushiRestaurantReview () {
         }
     }
     
-    dfs(start: leafReal, restaurantList: &restrans, check: &check, checkR: &checkR, count: &count, countR: &countR)
+    dfs(start: leafReal, restaurantList: &restrans, check: &check, checkR: &checkR, count: count, countR: &countR)
 }

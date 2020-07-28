@@ -75,8 +75,10 @@ public struct UF {
             return
         } else if size[p] > size[q] {
             parent[Q] = p
+            size[p] += size[q]
         } else {
             parent[P] = Q
+            size[q] += size[p]
         }
     }
 }

@@ -32,6 +32,7 @@
 		628734BB24C6D59400D9E67F /* WhoIsMyParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628734BA24C6D59300D9E67F /* WhoIsMyParent.swift */; };
 		628734C424C7363600D9E67F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628734C324C7363600D9E67F /* main.swift */; };
 		628734C924C7364700D9E67F /* LCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628734C824C7364700D9E67F /* LCA.swift */; };
+		628D3F2624D07A490010C480 /* Bridges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F2524D07A490010C480 /* Bridges.swift */; };
 		62A6436A24CFED3D00DCDBDF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6436924CFED3D00DCDBDF /* main.swift */; };
 		62A6437024CFED4C00DCDBDF /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6436F24CFED4C00DCDBDF /* UF.swift */; };
 		62C3B14124B78A8A001FB9D3 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3B13E24B78A8A001FB9D3 /* Board.swift */; };
@@ -265,6 +266,7 @@
 		628734C124C7363600D9E67F /* LCA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LCA; sourceTree = BUILT_PRODUCTS_DIR; };
 		628734C324C7363600D9E67F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		628734C824C7364700D9E67F /* LCA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCA.swift; sourceTree = "<group>"; };
+		628D3F2524D07A490010C480 /* Bridges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridges.swift; sourceTree = "<group>"; };
 		62A6436724CFED3D00DCDBDF /* UnionFind */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnionFind; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A6436924CFED3D00DCDBDF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		62A6436F24CFED4C00DCDBDF /* UF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
@@ -453,6 +455,7 @@
 			children = (
 				622AC6ED24CDD41100E78B39 /* main.swift */,
 				622AC6F324CDD4E200E78B39 /* TomatoFarm.swift */,
+				628D3F2524D07A490010C480 /* Bridges.swift */,
 				622AC6F524CDD81900E78B39 /* Queue.swift */,
 			);
 			path = ProblemSet3FloodFill;
@@ -973,6 +976,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				628D3F2624D07A490010C480 /* Bridges.swift in Sources */,
 				622AC6EE24CDD41100E78B39 /* main.swift in Sources */,
 				622AC6F624CDD81900E78B39 /* Queue.swift in Sources */,
 				622AC6F424CDD4E200E78B39 /* TomatoFarm.swift in Sources */,

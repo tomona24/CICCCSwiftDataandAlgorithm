@@ -8,6 +8,8 @@
 
 import Foundation
 
+
+
 func TomatoFarm() {
     struct Square {
         let x: Int
@@ -27,16 +29,10 @@ func TomatoFarm() {
     var groupMap = [[Int]](repeating: [Int](repeating: 0, count: m), count: n)
     var answer : Int = -1
     
-    func bfs(x: Int, y: Int, id: Int, m: Int, n: Int, n0: inout Int) {
-        let q = Queue<Square>()
-        q.enqueue(item: Square(x: x, y: y))
-        groupMap[y][x] = id
-        
+    var q = Queue<Square>()
+    
+    func bfs(m: Int, n: Int, n0: inout Int, q: inout Queue<Square>) {
         while !q.isEmpty() {
-            for i in 0..<n {
-                print(tomatoBox[i])
-            }
-            
             let square = q.dequeue()
             let x = square!.x
             let y = square!.y
@@ -52,10 +48,9 @@ func TomatoFarm() {
                             n0 -= 1
                             q.enqueue(item: Square(x: nx, y: ny))
                             groupMap[ny][nx] = id
-
                             answer = current
                         }
-
+                        
                     }
                 }
                 
@@ -71,12 +66,8 @@ func TomatoFarm() {
     }
     
     var id = 0
-    for i in 0..<n {
-        print(tomatoBox[i])
-    }
-    
     var numberOfZero = 0
-
+    
     for x in 0..<m {
         for y in 0..<n {
             if tomatoBox[y][x] == 0 {
@@ -84,17 +75,15 @@ func TomatoFarm() {
             }
             if tomatoBox[y][x] >= 1 && groupMap[y][x] == 0 {
                 id += 1
-                bfs(x: x, y: y, id: id, m: m, n: n, n0 : &numberOfZero)
+                q.enqueue(item:  Square(x: x, y: y))
             }
         }
-}
+    }
+    bfs(m: m, n: n, n0 : &numberOfZero, q: &q)
     
     if numberOfZero > 0 {
         print(-1)
     } else {
-    print(id)
-    print(answer)
+        print(answer)
     }
 }
-
-

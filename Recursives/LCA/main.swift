@@ -34,4 +34,4 @@ let lcaTree = """
 8 15
 """
 
-lowestCommonAncestor(input: lcaTree)
+LCA()

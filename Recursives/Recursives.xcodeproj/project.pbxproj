@@ -27,6 +27,9 @@
 		6273E44524CA0A8800101062 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E44424CA0A8800101062 /* main.swift */; };
 		6273E44B24CA0A9E00101062 /* SushiRestrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E44A24CA0A9E00101062 /* SushiRestrant.swift */; };
 		6273E48524CB35A700101062 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E48424CB35A700101062 /* Stack.swift */; };
+		6283C7B624D344C1001CF6FA /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283C7B524D344C1001CF6FA /* GasStation.swift */; };
+		6283C7B824D34A38001CF6FA /* PartitionLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283C7B724D34A38001CF6FA /* PartitionLabels.swift */; };
+		6283C7BA24D36132001CF6FA /* CourseScheduleIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283C7B924D36132001CF6FA /* CourseScheduleIII.swift */; };
 		628734B024C68E7700D9E67F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628734AF24C68E7700D9E67F /* main.swift */; };
 		628734B824C696AB00D9E67F /* Diameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628734B724C696AB00D9E67F /* Diameter.swift */; };
 		628734BB24C6D59400D9E67F /* WhoIsMyParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628734BA24C6D59300D9E67F /* WhoIsMyParent.swift */; };
@@ -36,7 +39,7 @@
 		628D3F2924D0E6250010C480 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F2824D0E6250010C480 /* Stack.swift */; };
 		628D3F2B24D1D5980010C480 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F2A24D1D5980010C480 /* Queue.swift */; };
 		628D3F3324D1E1F90010C480 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F3224D1E1F90010C480 /* main.swift */; };
-		628D3F3824D1E2070010C480 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F3724D1E2070010C480 /* Tasks.swift */; };
+		628D3F3824D1E2070010C480 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F3724D1E2070010C480 /* TaskScheduler.swift */; };
 		628D3F3A24D1E3BF0010C480 /* TwoCityScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F3924D1E3BF0010C480 /* TwoCityScheduling.swift */; };
 		628D3F6324D27ABA0010C480 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F6224D27ABA0010C480 /* main.swift */; };
 		628D3F6824D27AC30010C480 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F6724D27AC30010C480 /* Queue.swift */; };
@@ -287,6 +290,9 @@
 		6273E48124CA321700101062 /* sushi.11.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.11.out; sourceTree = "<group>"; };
 		6273E48224CA321700101062 /* sushi.10.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sushi.10.out; sourceTree = "<group>"; };
 		6273E48424CB35A700101062 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		6283C7B524D344C1001CF6FA /* GasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
+		6283C7B724D34A38001CF6FA /* PartitionLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionLabels.swift; sourceTree = "<group>"; };
+		6283C7B924D36132001CF6FA /* CourseScheduleIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseScheduleIII.swift; sourceTree = "<group>"; };
 		628734AD24C68E7600D9E67F /* TreeQuiz */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TreeQuiz; sourceTree = BUILT_PRODUCTS_DIR; };
 		628734AF24C68E7700D9E67F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		628734B724C696AB00D9E67F /* Diameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diameter.swift; sourceTree = "<group>"; };
@@ -299,7 +305,7 @@
 		628D3F2A24D1D5980010C480 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		628D3F3024D1E1F90010C480 /* Greedy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Greedy; sourceTree = BUILT_PRODUCTS_DIR; };
 		628D3F3224D1E1F90010C480 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		628D3F3724D1E2070010C480 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		628D3F3724D1E2070010C480 /* TaskScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
 		628D3F3924D1E3BF0010C480 /* TwoCityScheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoCityScheduling.swift; sourceTree = "<group>"; };
 		628D3F6024D27ABA0010C480 /* Assignment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignment; sourceTree = BUILT_PRODUCTS_DIR; };
 		628D3F6224D27ABA0010C480 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -649,8 +655,11 @@
 			isa = PBXGroup;
 			children = (
 				628D3F3224D1E1F90010C480 /* main.swift */,
-				628D3F3724D1E2070010C480 /* Tasks.swift */,
+				628D3F3724D1E2070010C480 /* TaskScheduler.swift */,
 				628D3F3924D1E3BF0010C480 /* TwoCityScheduling.swift */,
+				6283C7B524D344C1001CF6FA /* GasStation.swift */,
+				6283C7B924D36132001CF6FA /* CourseScheduleIII.swift */,
+				6283C7B724D34A38001CF6FA /* PartitionLabels.swift */,
 			);
 			path = Greedy;
 			sourceTree = "<group>";
@@ -1183,9 +1192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6283C7B624D344C1001CF6FA /* GasStation.swift in Sources */,
 				628D3F3A24D1E3BF0010C480 /* TwoCityScheduling.swift in Sources */,
-				628D3F3824D1E2070010C480 /* Tasks.swift in Sources */,
+				628D3F3824D1E2070010C480 /* TaskScheduler.swift in Sources */,
+				6283C7BA24D36132001CF6FA /* CourseScheduleIII.swift in Sources */,
 				628D3F3324D1E1F90010C480 /* main.swift in Sources */,
+				6283C7B824D34A38001CF6FA /* PartitionLabels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

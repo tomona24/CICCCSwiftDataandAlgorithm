@@ -8,5 +8,15 @@
 
 import Foundation
 
-leastInterval(["A","A","A","A","A","A","B","C","D","E","F","G"], 2)
+//leastInterval(["A","A","A","A","A","A","B","C","D","E","F","G"], 2)
 
+
+//print(partitionLabels("ababcbacadefegdehijhklij"))
+print(partitionLabels("qiejxqfnqceocmy"))
+
+//"ababcbacadefegdehijhklij"
+//"eaedcaaadedaacb"
+
+//"bceacbacdbbadea"
+
+//"qiejxqfnqceocmy"

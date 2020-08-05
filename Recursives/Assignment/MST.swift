@@ -33,7 +33,7 @@ public final class MST {
     
     var q = IndexPriorityQueue<Edge>(<)
     var checked = [Bool](repeating: false, count: graph.count)
-    var tree = [[(v: Int, w: Int))]](repeating: [], count: graph.count)
+    var tree = [Edge]()
     
     var index = 0
     var minEdge :Edge = Edge.init(v: graph[0][0][0], w: graph[0][0][1])
@@ -56,16 +56,14 @@ public final class MST {
         let minWeightE = q.dequeue()!
         let v = minWeightE.v
         let w = minWeightE.w
-        if checked[v] == true && checked[index] == true {
+        if checked[v - 1] == true && checked[index] == true {
             continue
         } else {
-        checked[v] = true
-        tree[index].append((v: v, w: w))
-        tree[v].append((v: index, w: w))
+        checked[v - 1] = true
+        tree.append(minWeightE)
         }
-        index = v
     }
-    return tree
+    return tree.map { $0.w }.reduce(0, +)
   }
   
   /// Kruskal's MST Algorithm O(ElgE)

@@ -21,6 +21,7 @@
 		6269990924B787EA00FFFC9C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6269990824B787EA00FFFC9C /* main.swift */; };
 		6273302924DAF94F00FF9350 /* MST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273302824DAF94F00FF9350 /* MST.swift */; };
 		6273302C24DAFBAE00FF9350 /* IndexPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273302B24DAFBAE00FF9350 /* IndexPriorityQueue.swift */; };
+		6273302E24DB0B0100FF9350 /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273302D24DB0B0100FF9350 /* UF.swift */; };
 		6273E42F24C8F86700101062 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E42E24C8F86700101062 /* main.swift */; };
 		6273E43524C8F87700101062 /* CyclePerutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E43424C8F87700101062 /* CyclePerutation.swift */; };
 		6273E43724C9031600101062 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E43624C9031600101062 /* Queue.swift */; };
@@ -230,6 +231,7 @@
 		6269990824B787EA00FFFC9C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6273302824DAF94F00FF9350 /* MST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MST.swift; sourceTree = "<group>"; };
 		6273302B24DAFBAE00FF9350 /* IndexPriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPriorityQueue.swift; sourceTree = "<group>"; };
+		6273302D24DB0B0100FF9350 /* UF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
 		6273E42C24C8F86700101062 /* ProblemSet2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProblemSet2; sourceTree = BUILT_PRODUCTS_DIR; };
 		6273E42E24C8F86700101062 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6273E43424C8F87700101062 /* CyclePerutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclePerutation.swift; sourceTree = "<group>"; };
@@ -674,6 +676,7 @@
 				628D3F6224D27ABA0010C480 /* main.swift */,
 				6273302B24DAFBAE00FF9350 /* IndexPriorityQueue.swift */,
 				6273302824DAF94F00FF9350 /* MST.swift */,
+				6273302D24DB0B0100FF9350 /* UF.swift */,
 				628D3F6B24D27ADA0010C480 /* DAG */,
 				628D3F6724D27AC30010C480 /* Queue.swift */,
 				628D3F6924D27ACA0010C480 /* Stack.swift */,
@@ -1217,6 +1220,7 @@
 				628D3F6D24D27AF20010C480 /* CourseSchedule.swift in Sources */,
 				628D3F6A24D27ACA0010C480 /* Stack.swift in Sources */,
 				6273302924DAF94F00FF9350 /* MST.swift in Sources */,
+				6273302E24DB0B0100FF9350 /* UF.swift in Sources */,
 				628D3F6824D27AC30010C480 /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,29 +35,36 @@ public final class MST {
     var checked = [Bool](repeating: false, count: graph.count)
     var tree = [[(v: Int, w: Int))]](repeating: [], count: graph.count)
     
+    var index = 0
+    var minEdge :Edge = Edge.init(v: graph[0][0][0], w: graph[0][0][1])
+    
     for i in 0..<graph.count {
         for k in 0..<graph[i].count {
             let v = graph[i][k][0]
             let w = graph[i][k][1]
             let edge: Edge = Edge.init(v: v, w: w)
             q.enqueue(edge)
-        }
-    }
-    while !q.isEmpty {
-        let minWeightE = q.peek!
-        let initialV = q.index(of: minWeightE)!
-        let v = minWeightE.v
-        let w = minWeightE.w
-        q.dequeue()
-        if checked[v] == true && checked[initialV] == true {
-            continue
-        } else {
-        checked[v] = true
-        tree[initialV].append((v: v, w: w))
-        tree[v].append((v: v, w: w))
+            if minEdge < edge {
+                index = i
+            }
         }
     }
     
+    checked[index] = true
+    
+    while !q.isEmpty {
+        let minWeightE = q.dequeue()!
+        let v = minWeightE.v
+        let w = minWeightE.w
+        if checked[v] == true && checked[index] == true {
+            continue
+        } else {
+        checked[v] = true
+        tree[index].append((v: v, w: w))
+        tree[v].append((v: index, w: w))
+        }
+        index = v
+    }
     return tree
   }
   

@@ -45,7 +45,7 @@ public final class MST {
     }
     while !q.isEmpty {
         let minWeightE = q.peek!
-        let initialV = q.index(of: minWeightE)
+        let initialV = q.index(of: minWeightE)!
         let v = minWeightE.v
         let w = minWeightE.w
         q.dequeue()
@@ -54,7 +54,7 @@ public final class MST {
         } else {
         checked[v] = true
         tree[initialV].append((v: v, w: w))
-        tree[v].append((v: , w: w))
+        tree[v].append((v: v, w: w))
         }
     }
     

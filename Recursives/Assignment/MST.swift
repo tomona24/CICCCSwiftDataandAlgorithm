@@ -35,37 +35,30 @@ public final class MST {
     var checked = [Bool](repeating: false, count: graph.count)
     var tree = [[(v: Int, w: Int))]](repeating: [], count: graph.count)
     
-    var minimumEdge : Edge = Edge.init(v: graph[0][0][0], w: graph[0][0][1])
-    var initialV: Int = 0
     for i in 0..<graph.count {
         for k in 0..<graph[i].count {
             let v = graph[i][k][0]
             let w = graph[i][k][1]
             let edge: Edge = Edge.init(v: v, w: w)
             q.enqueue(edge)
-            if edge < minimumEdge {
-                minimumEdge = edge
-                initialV = i
-            }
         }
     }
     while !q.isEmpty {
-        q.index(of: <#T##Edge#>)
-        let minWeightE = q.dequeue()!
+        let minWeightE = q.peek!
+        let initialV = q.index(of: minWeightE)
         let v = minWeightE.v
         let w = minWeightE.w
-        
+        q.dequeue()
         if checked[v] == true && checked[initialV] == true {
             continue
         } else {
         checked[v] = true
-        
         tree[initialV].append((v: v, w: w))
         tree[v].append((v: , w: w))
-        initialV = v
         }
     }
     
+    return tree
   }
   
   /// Kruskal's MST Algorithm O(ElgE)

@@ -136,18 +136,17 @@ func MCF () -> Int {
     
     allPipes.sort()
     
-    print(allPipes)
-    print(mstPipes)
-
     var uf = UFind(M + 1)
-    var needActivate : Dictionary<String, Pipe>
-    needActivate = [:]
+    var needDiactivate : Dictionary<String, Pipe>
+    needDiactivate = [:]
     var minCost = 0
     var canEnhance = false
     
     for p in allPipes {
-        if uf.connected(p.from, p.to) && !p.isActive {
-            needActivate[p.name] = p
+        if uf.connected(p.from, p.to) {
+            if p.isActive {
+                needDiactivate[p.name] = p
+            }
             continue
         }
         uf.union(p.from, p.to)
@@ -164,7 +163,10 @@ func MCF () -> Int {
     
     var day = 0
     
-    for p in needActivate {
+    print(mstPipes)
+    print(needDiactivate)
+    print(inactivePipes)
+    for p in needDiactivate {
         if inactivePipes[p.key] == nil {
             day += 1
         }

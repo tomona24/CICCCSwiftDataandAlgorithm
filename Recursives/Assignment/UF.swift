@@ -44,13 +44,20 @@ public struct UF {
     /// - Parameter p: an element
     /// - Returns: the canonical element of the set containing `p`
     public mutating func find(_ p: Int) -> Int {
-        // TODO
-        var current = p
-        while current != parent[current] {
-            current = parent[parent[current]]
-        }
-        return current
+
+      var root = p
+      while root != parent[root] { // find the root
+        root = parent[root]
+      }
+      var p = p
+      while p != root {
+        let newp = parent[p]
+        parent[p] = root  // path compression
+        p = newp
+      }
+      return root
     }
+    
     
     /// Returns `true` if the two elements are in the same set.
     /// - Parameters:
@@ -68,17 +75,18 @@ public struct UF {
     ///   - p: one element
     ///   - q: the other element
     public mutating func union(_ p: Int, _ q: Int) {
-        // TODO
-        let P = find(p)
-        let Q = find(q)
-        if P == Q {
-            return
-        } else if size[p] > size[q] {
-            parent[Q] = p
-            size[p] += size[q]
-        } else {
-            parent[P] = Q
-            size[q] += size[p]
-        }
+      let rootP = find(p)
+      let rootQ = find(q)
+      guard rootP != rootQ else { return } // already connected
+      
+      // make smaller root point to larger one
+      if size[rootP] < size[rootQ] {
+        parent[rootP] = rootQ
+        size[rootQ] += size[rootP]
+      } else {
+        parent[rootQ] = rootP
+        size[rootP] += size[rootQ]
+      }
+      count -= 1
     }
 }

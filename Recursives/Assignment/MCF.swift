@@ -17,7 +17,7 @@ public struct UFind {
   private var size: [Int]
   /// number of components
   private(set) var count: Int
-  
+
   /// Initializes an empty union-find data structure with **n** elements
   /// **0** through **n-1**.
   /// Initially, each elements is in its own set.
@@ -30,7 +30,7 @@ public struct UFind {
       self.parent[i] = i
     }
   }
-  
+
   /// Returns the canonical element(root) of the set containing element `p`.
   /// - Parameter p: an element
   /// - Returns: the canonical element of the set containing `p`
@@ -47,7 +47,7 @@ public struct UFind {
     }
     return root
   }
-  
+
   /// Returns `true` if the two elements are in the same set.
   /// - Parameters:
   ///   - p: one elememt
@@ -56,7 +56,7 @@ public struct UFind {
   public mutating func connected(_ p: Int, _ q: Int) -> Bool {
     return find(p) == find(q)
   }
-  
+
   /// Merges the set containing element `p` with the set containing
   /// element `q`
   /// - Parameters:
@@ -66,7 +66,7 @@ public struct UFind {
     let rootP = find(p)
     let rootQ = find(q)
     guard rootP != rootQ else { return } // already connected
-    
+
     // make smaller root point to larger one
     if size[rootP] < size[rootQ] {
       parent[rootP] = rootQ
@@ -77,7 +77,7 @@ public struct UFind {
     }
     count -= 1
   }
-  
+
 }
 
 
@@ -139,7 +139,7 @@ func MCF () -> Int {
     print(allPipes)
     print(mstPipes)
 
-    var uf = UFind(M)
+    var uf = UFind(M + 1)
     var needActivate : Dictionary<String, Pipe>
     needActivate = [:]
     var minCost = 0

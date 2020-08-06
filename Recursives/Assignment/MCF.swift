@@ -163,14 +163,13 @@ func MCF () -> Int {
     
     var day = 0
     
-    print(mstPipes)
-    print(needDiactivate)
-    print(inactivePipes)
+
     for p in needDiactivate {
         if inactivePipes[p.key] == nil {
             day += 1
         }
     }
     
+
     return minCost < originalCost ? day : 0
 }

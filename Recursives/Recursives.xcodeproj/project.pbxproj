@@ -22,6 +22,7 @@
 		6273302924DAF94F00FF9350 /* MST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273302824DAF94F00FF9350 /* MST.swift */; };
 		6273302C24DAFBAE00FF9350 /* IndexPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273302B24DAFBAE00FF9350 /* IndexPriorityQueue.swift */; };
 		6273302E24DB0B0100FF9350 /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273302D24DB0B0100FF9350 /* UF.swift */; };
+		6273303024DC435C00FF9350 /* MCF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273302F24DC435C00FF9350 /* MCF.swift */; };
 		6273E42F24C8F86700101062 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E42E24C8F86700101062 /* main.swift */; };
 		6273E43524C8F87700101062 /* CyclePerutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E43424C8F87700101062 /* CyclePerutation.swift */; };
 		6273E43724C9031600101062 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E43624C9031600101062 /* Queue.swift */; };
@@ -232,6 +233,113 @@
 		6273302824DAF94F00FF9350 /* MST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MST.swift; sourceTree = "<group>"; };
 		6273302B24DAFBAE00FF9350 /* IndexPriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPriorityQueue.swift; sourceTree = "<group>"; };
 		6273302D24DB0B0100FF9350 /* UF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
+		6273302F24DC435C00FF9350 /* MCF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCF.swift; sourceTree = "<group>"; };
+		6273303224DC553E00FF9350 /* mcf.38.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.38.in; sourceTree = "<group>"; };
+		6273303324DC553E00FF9350 /* mcf.28.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.28.in; sourceTree = "<group>"; };
+		6273303424DC553E00FF9350 /* mcf.48.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.48.out; sourceTree = "<group>"; };
+		6273303524DC553E00FF9350 /* mcf.08.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.08.in; sourceTree = "<group>"; };
+		6273303624DC553E00FF9350 /* mcf.49.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.49.in; sourceTree = "<group>"; };
+		6273303724DC553E00FF9350 /* mcf.18.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.18.in; sourceTree = "<group>"; };
+		6273303824DC553E00FF9350 /* mcf.49.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.49.out; sourceTree = "<group>"; };
+		6273303924DC553E00FF9350 /* mcf.09.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.09.in; sourceTree = "<group>"; };
+		6273303A24DC553E00FF9350 /* mcf.48.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.48.in; sourceTree = "<group>"; };
+		6273303B24DC553E00FF9350 /* mcf.19.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.19.in; sourceTree = "<group>"; };
+		6273303C24DC553E00FF9350 /* mcf.39.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.39.in; sourceTree = "<group>"; };
+		6273303D24DC553E00FF9350 /* mcf.sample.01.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.sample.01.in; sourceTree = "<group>"; };
+		6273303E24DC553E00FF9350 /* mcf.29.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.29.in; sourceTree = "<group>"; };
+		6273303F24DC553E00FF9350 /* mcf.32.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.32.in; sourceTree = "<group>"; };
+		6273304024DC553E00FF9350 /* mcf.28.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.28.out; sourceTree = "<group>"; };
+		6273304124DC553E00FF9350 /* mcf.14.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.14.out; sourceTree = "<group>"; };
+		6273304224DC553E00FF9350 /* mcf.06.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.06.in; sourceTree = "<group>"; };
+		6273304324DC553E00FF9350 /* mcf.01.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.01.out; sourceTree = "<group>"; };
+		6273304424DC553E00FF9350 /* mcf.16.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.16.in; sourceTree = "<group>"; };
+		6273304524DC553E00FF9350 /* mcf.15.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.15.out; sourceTree = "<group>"; };
+		6273304624DC553E00FF9350 /* mcf.29.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.29.out; sourceTree = "<group>"; };
+		6273304724DC553E00FF9350 /* mcf.47.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.47.in; sourceTree = "<group>"; };
+		6273304824DC553E00FF9350 /* mcf.22.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.22.in; sourceTree = "<group>"; };
+		6273304924DC553F00FF9350 /* mcf.02.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.02.in; sourceTree = "<group>"; };
+		6273304A24DC553F00FF9350 /* mcf.03.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.03.out; sourceTree = "<group>"; };
+		6273304B24DC553F00FF9350 /* mcf.36.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.36.in; sourceTree = "<group>"; };
+		6273304C24DC553F00FF9350 /* mcf.17.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.17.out; sourceTree = "<group>"; };
+		6273304D24DC553F00FF9350 /* mcf.16.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.16.out; sourceTree = "<group>"; };
+		6273304E24DC553F00FF9350 /* mcf.26.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.26.in; sourceTree = "<group>"; };
+		6273304F24DC553F00FF9350 /* mcf.02.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.02.out; sourceTree = "<group>"; };
+		6273305024DC553F00FF9350 /* mcf.43.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.43.in; sourceTree = "<group>"; };
+		6273305124DC553F00FF9350 /* mcf.12.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.12.in; sourceTree = "<group>"; };
+		6273305224DC553F00FF9350 /* mcf.03.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.03.in; sourceTree = "<group>"; };
+		6273305324DC553F00FF9350 /* mcf.06.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.06.out; sourceTree = "<group>"; };
+		6273305424DC553F00FF9350 /* mcf.12.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.12.out; sourceTree = "<group>"; };
+		6273305524DC553F00FF9350 /* mcf.37.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.37.in; sourceTree = "<group>"; };
+		6273305624DC553F00FF9350 /* mcf.27.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.27.in; sourceTree = "<group>"; };
+		6273305724DC553F00FF9350 /* mcf.13.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.13.out; sourceTree = "<group>"; };
+		6273305824DC553F00FF9350 /* mcf.07.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.07.out; sourceTree = "<group>"; };
+		6273305924DC553F00FF9350 /* mcf.42.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.42.in; sourceTree = "<group>"; };
+		6273305A24DC553F00FF9350 /* mcf.13.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.13.in; sourceTree = "<group>"; };
+		6273305B24DC553F00FF9350 /* mcf.33.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.33.in; sourceTree = "<group>"; };
+		6273305C24DC553F00FF9350 /* mcf.11.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.11.out; sourceTree = "<group>"; };
+		6273305D24DC553F00FF9350 /* mcf.05.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.05.out; sourceTree = "<group>"; };
+		6273305E24DC553F00FF9350 /* mcf.07.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.07.in; sourceTree = "<group>"; };
+		6273305F24DC553F00FF9350 /* mcf.39.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.39.out; sourceTree = "<group>"; };
+		6273306024DC553F00FF9350 /* mcf.38.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.38.out; sourceTree = "<group>"; };
+		6273306124DC553F00FF9350 /* mcf.17.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.17.in; sourceTree = "<group>"; };
+		6273306224DC553F00FF9350 /* mcf.04.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.04.out; sourceTree = "<group>"; };
+		6273306324DC553F00FF9350 /* mcf.46.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.46.in; sourceTree = "<group>"; };
+		6273306424DC553F00FF9350 /* mcf.10.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.10.out; sourceTree = "<group>"; };
+		6273306524DC553F00FF9350 /* mcf.23.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.23.in; sourceTree = "<group>"; };
+		6273306624DC553F00FF9350 /* mcf.34.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.34.in; sourceTree = "<group>"; };
+		6273306724DC553F00FF9350 /* mcf.09.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.09.out; sourceTree = "<group>"; };
+		6273306824DC553F00FF9350 /* mcf.35.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.35.out; sourceTree = "<group>"; };
+		6273306924DC553F00FF9350 /* mcf.21.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.21.out; sourceTree = "<group>"; };
+		6273306A24DC553F00FF9350 /* mcf.20.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.20.out; sourceTree = "<group>"; };
+		6273306B24DC553F00FF9350 /* mcf.34.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.34.out; sourceTree = "<group>"; };
+		6273306C24DC553F00FF9350 /* mcf.08.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.08.out; sourceTree = "<group>"; };
+		6273306D24DC553F00FF9350 /* mcf.24.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.24.in; sourceTree = "<group>"; };
+		6273306E24DC553F00FF9350 /* mcf.10.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.10.in; sourceTree = "<group>"; };
+		6273306F24DC553F00FF9350 /* mcf.41.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.41.in; sourceTree = "<group>"; };
+		6273307024DC553F00FF9350 /* mcf.30.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.30.in; sourceTree = "<group>"; };
+		6273307124DC553F00FF9350 /* mcf.04.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.04.in; sourceTree = "<group>"; };
+		6273307224DC553F00FF9350 /* mcf.22.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.22.out; sourceTree = "<group>"; };
+		6273307324DC553F00FF9350 /* mcf.36.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.36.out; sourceTree = "<group>"; };
+		6273307424DC553F00FF9350 /* mcf.37.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.37.out; sourceTree = "<group>"; };
+		6273307524DC553F00FF9350 /* mcf.23.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.23.out; sourceTree = "<group>"; };
+		6273307624DC553F00FF9350 /* mcf.45.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.45.in; sourceTree = "<group>"; };
+		6273307724DC553F00FF9350 /* mcf.14.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.14.in; sourceTree = "<group>"; };
+		6273307824DC553F00FF9350 /* mcf.20.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.20.in; sourceTree = "<group>"; };
+		6273307924DC553F00FF9350 /* mcf.31.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.31.in; sourceTree = "<group>"; };
+		6273307A24DC553F00FF9350 /* mcf.05.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.05.in; sourceTree = "<group>"; };
+		6273307B24DC553F00FF9350 /* mcf.27.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.27.out; sourceTree = "<group>"; };
+		6273307C24DC553F00FF9350 /* mcf.33.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.33.out; sourceTree = "<group>"; };
+		6273307D24DC553F00FF9350 /* mcf.sample.01.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.sample.01.out; sourceTree = "<group>"; };
+		6273307E24DC553F00FF9350 /* mcf.32.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.32.out; sourceTree = "<group>"; };
+		6273307F24DC553F00FF9350 /* mcf.26.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.26.out; sourceTree = "<group>"; };
+		6273308024DC553F00FF9350 /* mcf.44.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.44.in; sourceTree = "<group>"; };
+		6273308124DC553F00FF9350 /* mcf.15.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.15.in; sourceTree = "<group>"; };
+		6273308224DC553F00FF9350 /* mcf.21.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.21.in; sourceTree = "<group>"; };
+		6273308324DC553F00FF9350 /* mcf.50.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.50.in; sourceTree = "<group>"; };
+		6273308424DC553F00FF9350 /* mcf.01.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.01.in; sourceTree = "<group>"; };
+		6273308524DC553F00FF9350 /* mcf.35.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.35.in; sourceTree = "<group>"; };
+		6273308624DC553F00FF9350 /* mcf.30.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.30.out; sourceTree = "<group>"; };
+		6273308724DC553F00FF9350 /* mcf.24.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.24.out; sourceTree = "<group>"; };
+		6273308824DC553F00FF9350 /* mcf.18.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.18.out; sourceTree = "<group>"; };
+		6273308924DC553F00FF9350 /* mcf.sample.03.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.sample.03.out; sourceTree = "<group>"; };
+		6273308A24DC553F00FF9350 /* mcf.sample.02.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.sample.02.out; sourceTree = "<group>"; };
+		6273308B24DC553F00FF9350 /* mcf.19.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.19.out; sourceTree = "<group>"; };
+		6273308C24DC553F00FF9350 /* mcf.25.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.25.out; sourceTree = "<group>"; };
+		6273308D24DC553F00FF9350 /* mcf.31.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.31.out; sourceTree = "<group>"; };
+		6273308E24DC553F00FF9350 /* mcf.25.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.25.in; sourceTree = "<group>"; };
+		6273308F24DC553F00FF9350 /* mcf.11.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.11.in; sourceTree = "<group>"; };
+		6273309024DC553F00FF9350 /* mcf.40.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.40.in; sourceTree = "<group>"; };
+		6273309124DC553F00FF9350 /* mcf.42.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.42.out; sourceTree = "<group>"; };
+		6273309224DC553F00FF9350 /* mcf.43.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.43.out; sourceTree = "<group>"; };
+		6273309324DC553F00FF9350 /* mcf.41.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.41.out; sourceTree = "<group>"; };
+		6273309424DC553F00FF9350 /* mcf.sample.02.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.sample.02.in; sourceTree = "<group>"; };
+		6273309524DC553F00FF9350 /* mcf.40.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.40.out; sourceTree = "<group>"; };
+		6273309624DC553F00FF9350 /* mcf.44.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.44.out; sourceTree = "<group>"; };
+		6273309724DC553F00FF9350 /* mcf.50.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.50.out; sourceTree = "<group>"; };
+		6273309824DC553F00FF9350 /* mcf.sample.03.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.sample.03.in; sourceTree = "<group>"; };
+		6273309924DC553F00FF9350 /* mcf.45.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.45.out; sourceTree = "<group>"; };
+		6273309A24DC553F00FF9350 /* mcf.47.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.47.out; sourceTree = "<group>"; };
+		6273309B24DC553F00FF9350 /* mcf.46.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.46.out; sourceTree = "<group>"; };
 		6273E42C24C8F86700101062 /* ProblemSet2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProblemSet2; sourceTree = BUILT_PRODUCTS_DIR; };
 		6273E42E24C8F86700101062 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6273E43424C8F87700101062 /* CyclePerutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclePerutation.swift; sourceTree = "<group>"; };
@@ -552,6 +660,119 @@
 			path = MiniProject2;
 			sourceTree = "<group>";
 		};
+		6273303124DC553E00FF9350 /* mcf */ = {
+			isa = PBXGroup;
+			children = (
+				6273303224DC553E00FF9350 /* mcf.38.in */,
+				6273303324DC553E00FF9350 /* mcf.28.in */,
+				6273303424DC553E00FF9350 /* mcf.48.out */,
+				6273303524DC553E00FF9350 /* mcf.08.in */,
+				6273303624DC553E00FF9350 /* mcf.49.in */,
+				6273303724DC553E00FF9350 /* mcf.18.in */,
+				6273303824DC553E00FF9350 /* mcf.49.out */,
+				6273303924DC553E00FF9350 /* mcf.09.in */,
+				6273303A24DC553E00FF9350 /* mcf.48.in */,
+				6273303B24DC553E00FF9350 /* mcf.19.in */,
+				6273303C24DC553E00FF9350 /* mcf.39.in */,
+				6273303D24DC553E00FF9350 /* mcf.sample.01.in */,
+				6273303E24DC553E00FF9350 /* mcf.29.in */,
+				6273303F24DC553E00FF9350 /* mcf.32.in */,
+				6273304024DC553E00FF9350 /* mcf.28.out */,
+				6273304124DC553E00FF9350 /* mcf.14.out */,
+				6273304224DC553E00FF9350 /* mcf.06.in */,
+				6273304324DC553E00FF9350 /* mcf.01.out */,
+				6273304424DC553E00FF9350 /* mcf.16.in */,
+				6273304524DC553E00FF9350 /* mcf.15.out */,
+				6273304624DC553E00FF9350 /* mcf.29.out */,
+				6273304724DC553E00FF9350 /* mcf.47.in */,
+				6273304824DC553E00FF9350 /* mcf.22.in */,
+				6273304924DC553F00FF9350 /* mcf.02.in */,
+				6273304A24DC553F00FF9350 /* mcf.03.out */,
+				6273304B24DC553F00FF9350 /* mcf.36.in */,
+				6273304C24DC553F00FF9350 /* mcf.17.out */,
+				6273304D24DC553F00FF9350 /* mcf.16.out */,
+				6273304E24DC553F00FF9350 /* mcf.26.in */,
+				6273304F24DC553F00FF9350 /* mcf.02.out */,
+				6273305024DC553F00FF9350 /* mcf.43.in */,
+				6273305124DC553F00FF9350 /* mcf.12.in */,
+				6273305224DC553F00FF9350 /* mcf.03.in */,
+				6273305324DC553F00FF9350 /* mcf.06.out */,
+				6273305424DC553F00FF9350 /* mcf.12.out */,
+				6273305524DC553F00FF9350 /* mcf.37.in */,
+				6273305624DC553F00FF9350 /* mcf.27.in */,
+				6273305724DC553F00FF9350 /* mcf.13.out */,
+				6273305824DC553F00FF9350 /* mcf.07.out */,
+				6273305924DC553F00FF9350 /* mcf.42.in */,
+				6273305A24DC553F00FF9350 /* mcf.13.in */,
+				6273305B24DC553F00FF9350 /* mcf.33.in */,
+				6273305C24DC553F00FF9350 /* mcf.11.out */,
+				6273305D24DC553F00FF9350 /* mcf.05.out */,
+				6273305E24DC553F00FF9350 /* mcf.07.in */,
+				6273305F24DC553F00FF9350 /* mcf.39.out */,
+				6273306024DC553F00FF9350 /* mcf.38.out */,
+				6273306124DC553F00FF9350 /* mcf.17.in */,
+				6273306224DC553F00FF9350 /* mcf.04.out */,
+				6273306324DC553F00FF9350 /* mcf.46.in */,
+				6273306424DC553F00FF9350 /* mcf.10.out */,
+				6273306524DC553F00FF9350 /* mcf.23.in */,
+				6273306624DC553F00FF9350 /* mcf.34.in */,
+				6273306724DC553F00FF9350 /* mcf.09.out */,
+				6273306824DC553F00FF9350 /* mcf.35.out */,
+				6273306924DC553F00FF9350 /* mcf.21.out */,
+				6273306A24DC553F00FF9350 /* mcf.20.out */,
+				6273306B24DC553F00FF9350 /* mcf.34.out */,
+				6273306C24DC553F00FF9350 /* mcf.08.out */,
+				6273306D24DC553F00FF9350 /* mcf.24.in */,
+				6273306E24DC553F00FF9350 /* mcf.10.in */,
+				6273306F24DC553F00FF9350 /* mcf.41.in */,
+				6273307024DC553F00FF9350 /* mcf.30.in */,
+				6273307124DC553F00FF9350 /* mcf.04.in */,
+				6273307224DC553F00FF9350 /* mcf.22.out */,
+				6273307324DC553F00FF9350 /* mcf.36.out */,
+				6273307424DC553F00FF9350 /* mcf.37.out */,
+				6273307524DC553F00FF9350 /* mcf.23.out */,
+				6273307624DC553F00FF9350 /* mcf.45.in */,
+				6273307724DC553F00FF9350 /* mcf.14.in */,
+				6273307824DC553F00FF9350 /* mcf.20.in */,
+				6273307924DC553F00FF9350 /* mcf.31.in */,
+				6273307A24DC553F00FF9350 /* mcf.05.in */,
+				6273307B24DC553F00FF9350 /* mcf.27.out */,
+				6273307C24DC553F00FF9350 /* mcf.33.out */,
+				6273307D24DC553F00FF9350 /* mcf.sample.01.out */,
+				6273307E24DC553F00FF9350 /* mcf.32.out */,
+				6273307F24DC553F00FF9350 /* mcf.26.out */,
+				6273308024DC553F00FF9350 /* mcf.44.in */,
+				6273308124DC553F00FF9350 /* mcf.15.in */,
+				6273308224DC553F00FF9350 /* mcf.21.in */,
+				6273308324DC553F00FF9350 /* mcf.50.in */,
+				6273308424DC553F00FF9350 /* mcf.01.in */,
+				6273308524DC553F00FF9350 /* mcf.35.in */,
+				6273308624DC553F00FF9350 /* mcf.30.out */,
+				6273308724DC553F00FF9350 /* mcf.24.out */,
+				6273308824DC553F00FF9350 /* mcf.18.out */,
+				6273308924DC553F00FF9350 /* mcf.sample.03.out */,
+				6273308A24DC553F00FF9350 /* mcf.sample.02.out */,
+				6273308B24DC553F00FF9350 /* mcf.19.out */,
+				6273308C24DC553F00FF9350 /* mcf.25.out */,
+				6273308D24DC553F00FF9350 /* mcf.31.out */,
+				6273308E24DC553F00FF9350 /* mcf.25.in */,
+				6273308F24DC553F00FF9350 /* mcf.11.in */,
+				6273309024DC553F00FF9350 /* mcf.40.in */,
+				6273309124DC553F00FF9350 /* mcf.42.out */,
+				6273309224DC553F00FF9350 /* mcf.43.out */,
+				6273309324DC553F00FF9350 /* mcf.41.out */,
+				6273309424DC553F00FF9350 /* mcf.sample.02.in */,
+				6273309524DC553F00FF9350 /* mcf.40.out */,
+				6273309624DC553F00FF9350 /* mcf.44.out */,
+				6273309724DC553F00FF9350 /* mcf.50.out */,
+				6273309824DC553F00FF9350 /* mcf.sample.03.in */,
+				6273309924DC553F00FF9350 /* mcf.45.out */,
+				6273309A24DC553F00FF9350 /* mcf.47.out */,
+				6273309B24DC553F00FF9350 /* mcf.46.out */,
+			);
+			path = mcf;
+			sourceTree = "<group>";
+		};
 		6273E42D24C8F86700101062 /* ProblemSet2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -675,7 +896,9 @@
 			children = (
 				628D3F6224D27ABA0010C480 /* main.swift */,
 				6273302B24DAFBAE00FF9350 /* IndexPriorityQueue.swift */,
+				6273303124DC553E00FF9350 /* mcf */,
 				6273302824DAF94F00FF9350 /* MST.swift */,
+				6273302F24DC435C00FF9350 /* MCF.swift */,
 				6273302D24DB0B0100FF9350 /* UF.swift */,
 				628D3F6B24D27ADA0010C480 /* DAG */,
 				628D3F6724D27AC30010C480 /* Queue.swift */,
@@ -1219,6 +1442,7 @@
 				6273302C24DAFBAE00FF9350 /* IndexPriorityQueue.swift in Sources */,
 				628D3F6D24D27AF20010C480 /* CourseSchedule.swift in Sources */,
 				628D3F6A24D27ACA0010C480 /* Stack.swift in Sources */,
+				6273303024DC435C00FF9350 /* MCF.swift in Sources */,
 				6273302924DAF94F00FF9350 /* MST.swift in Sources */,
 				6273302E24DB0B0100FF9350 /* UF.swift in Sources */,
 				628D3F6824D27AC30010C480 /* Queue.swift in Sources */,

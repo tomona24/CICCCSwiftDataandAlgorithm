@@ -8,7 +8,6 @@
 
 import Foundation
 
-class Solution {
     func findOrder(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int] {
         var dag = [[Int]](repeating: [Int](), count: numCourses)
         var indegree = [Int](repeating: 0, count: numCourses )
@@ -52,4 +51,3 @@ class Solution {
         }
         return order
     }
-}

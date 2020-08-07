@@ -23,6 +23,8 @@
 		6273302C24DAFBAE00FF9350 /* IndexPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273302B24DAFBAE00FF9350 /* IndexPriorityQueue.swift */; };
 		6273302E24DB0B0100FF9350 /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273302D24DB0B0100FF9350 /* UF.swift */; };
 		6273303024DC435C00FF9350 /* MCF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273302F24DC435C00FF9350 /* MCF.swift */; };
+		6273309D24DC66AF00FF9350 /* NetworkDelayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273309C24DC66AF00FF9350 /* NetworkDelayTime.swift */; };
+		6273309F24DC693400FF9350 /* CheapestFlightsWithinKStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273309E24DC693400FF9350 /* CheapestFlightsWithinKStops.swift */; };
 		6273E42F24C8F86700101062 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E42E24C8F86700101062 /* main.swift */; };
 		6273E43524C8F87700101062 /* CyclePerutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E43424C8F87700101062 /* CyclePerutation.swift */; };
 		6273E43724C9031600101062 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273E43624C9031600101062 /* Queue.swift */; };
@@ -340,6 +342,8 @@
 		6273309924DC553F00FF9350 /* mcf.45.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.45.out; sourceTree = "<group>"; };
 		6273309A24DC553F00FF9350 /* mcf.47.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.47.out; sourceTree = "<group>"; };
 		6273309B24DC553F00FF9350 /* mcf.46.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mcf.46.out; sourceTree = "<group>"; };
+		6273309C24DC66AF00FF9350 /* NetworkDelayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDelayTime.swift; sourceTree = "<group>"; };
+		6273309E24DC693400FF9350 /* CheapestFlightsWithinKStops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapestFlightsWithinKStops.swift; sourceTree = "<group>"; };
 		6273E42C24C8F86700101062 /* ProblemSet2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProblemSet2; sourceTree = BUILT_PRODUCTS_DIR; };
 		6273E42E24C8F86700101062 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6273E43424C8F87700101062 /* CyclePerutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclePerutation.swift; sourceTree = "<group>"; };
@@ -895,6 +899,8 @@
 			isa = PBXGroup;
 			children = (
 				628D3F6224D27ABA0010C480 /* main.swift */,
+				6273309C24DC66AF00FF9350 /* NetworkDelayTime.swift */,
+				6273309E24DC693400FF9350 /* CheapestFlightsWithinKStops.swift */,
 				6273302B24DAFBAE00FF9350 /* IndexPriorityQueue.swift */,
 				6273303124DC553E00FF9350 /* mcf */,
 				6273302824DAF94F00FF9350 /* MST.swift */,
@@ -1437,7 +1443,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6273309F24DC693400FF9350 /* CheapestFlightsWithinKStops.swift in Sources */,
 				628D3F6F24D2813A0010C480 /*  CourseScheduleII.swift in Sources */,
+				6273309D24DC66AF00FF9350 /* NetworkDelayTime.swift in Sources */,
 				628D3F6324D27ABA0010C480 /* main.swift in Sources */,
 				6273302C24DAFBAE00FF9350 /* IndexPriorityQueue.swift in Sources */,
 				628D3F6D24D27AF20010C480 /* CourseSchedule.swift in Sources */,

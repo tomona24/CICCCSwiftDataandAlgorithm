@@ -11,73 +11,73 @@
 import Foundation
 
 public struct UFind {
-  /// parent[i] = parent of i
-  private var parent: [Int]
-  /// size[i] = number of nodes in tree rooted at i
-  private var size: [Int]
-  /// number of components
-  private(set) var count: Int
-
-  /// Initializes an empty union-find data structure with **n** elements
-  /// **0** through **n-1**.
-  /// Initially, each elements is in its own set.
-  /// - Parameter n: the number of elements
-  public init(_ n: Int) {
-    self.count = n
-    self.size = [Int](repeating: 1, count: n)
-    self.parent = [Int](repeating: 0, count: n)
-    for i in 0..<n {
-      self.parent[i] = i
+    /// parent[i] = parent of i
+    private var parent: [Int]
+    /// size[i] = number of nodes in tree rooted at i
+    private var size: [Int]
+    /// number of components
+    private(set) var count: Int
+    
+    /// Initializes an empty union-find data structure with **n** elements
+    /// **0** through **n-1**.
+    /// Initially, each elements is in its own set.
+    /// - Parameter n: the number of elements
+    public init(_ n: Int) {
+        self.count = n
+        self.size = [Int](repeating: 1, count: n)
+        self.parent = [Int](repeating: 0, count: n)
+        for i in 0..<n {
+            self.parent[i] = i
+        }
     }
-  }
-
-  /// Returns the canonical element(root) of the set containing element `p`.
-  /// - Parameter p: an element
-  /// - Returns: the canonical element of the set containing `p`
-  public mutating func find(_ p: Int) -> Int {
-    var root = p
-    while root != parent[root] { // find the root
-      root = parent[root]
+    
+    /// Returns the canonical element(root) of the set containing element `p`.
+    /// - Parameter p: an element
+    /// - Returns: the canonical element of the set containing `p`
+    public mutating func find(_ p: Int) -> Int {
+        var root = p
+        while root != parent[root] { // find the root
+            root = parent[root]
+        }
+        var p = p
+        while p != root {
+            let newp = parent[p]
+            parent[p] = root  // path compression
+            p = newp
+        }
+        return root
     }
-    var p = p
-    while p != root {
-      let newp = parent[p]
-      parent[p] = root  // path compression
-      p = newp
+    
+    /// Returns `true` if the two elements are in the same set.
+    /// - Parameters:
+    ///   - p: one elememt
+    ///   - q: the other element
+    /// - Returns: `true` if `p` and `q` are in the same set; `false` otherwise
+    public mutating func connected(_ p: Int, _ q: Int) -> Bool {
+        return find(p) == find(q)
     }
-    return root
-  }
-
-  /// Returns `true` if the two elements are in the same set.
-  /// - Parameters:
-  ///   - p: one elememt
-  ///   - q: the other element
-  /// - Returns: `true` if `p` and `q` are in the same set; `false` otherwise
-  public mutating func connected(_ p: Int, _ q: Int) -> Bool {
-    return find(p) == find(q)
-  }
-
-  /// Merges the set containing element `p` with the set containing
-  /// element `q`
-  /// - Parameters:
-  ///   - p: one element
-  ///   - q: the other element
-  public mutating func union(_ p: Int, _ q: Int) {
-    let rootP = find(p)
-    let rootQ = find(q)
-    guard rootP != rootQ else { return } // already connected
-
-    // make smaller root point to larger one
-    if size[rootP] < size[rootQ] {
-      parent[rootP] = rootQ
-      size[rootQ] += size[rootP]
-    } else {
-      parent[rootQ] = rootP
-      size[rootP] += size[rootQ]
+    
+    /// Merges the set containing element `p` with the set containing
+    /// element `q`
+    /// - Parameters:
+    ///   - p: one element
+    ///   - q: the other element
+    public mutating func union(_ p: Int, _ q: Int) {
+        let rootP = find(p)
+        let rootQ = find(q)
+        guard rootP != rootQ else { return } // already connected
+        
+        // make smaller root point to larger one
+        if size[rootP] < size[rootQ] {
+            parent[rootP] = rootQ
+            size[rootQ] += size[rootP]
+        } else {
+            parent[rootQ] = rootP
+            size[rootP] += size[rootQ]
+        }
+        count -= 1
     }
-    count -= 1
-  }
-
+    
 }
 
 
@@ -92,9 +92,9 @@ struct Pipe {
 }
 
 extension Pipe : Comparable {
-  static func <(lhs: Pipe, rhs: Pipe) -> Bool {
-    return lhs.cost < rhs.cost
-  }
+    static func <(lhs: Pipe, rhs: Pipe) -> Bool {
+        return lhs.cost < rhs.cost
+    }
 }
 
 
@@ -104,14 +104,14 @@ func MCF () -> Int {
     let M = firstLine[1]
     let D = firstLine[2]
     
-    let numOfGraph = M - N
+    if M - N < 0 {
+        return 0
+    }
     
-    // 2D array (each tomato location)
-//    var inactivePipes = [Pipe]()
     var inactivePipes : Dictionary<String, Pipe>
     inactivePipes = [:]
     var allPipes = [Pipe]()
-    var mstPipes = [Pipe]()
+    //    var mstPipes = [Pipe]()
     var originalCost = 0
     
     for i in 1...M {
@@ -127,33 +127,35 @@ func MCF () -> Int {
         if isActive {
             originalCost += cost
         }
-
+        
         if i >= N {
             inactivePipes[pipe.name] = pipe
-//            inactivePipes.append(pipe)
         }
     }
     
     allPipes.sort()
     
     var uf = UFind(M + 1)
-    var needDiactivate : Dictionary<String, Pipe>
-    needDiactivate = [:]
     var minCost = 0
     var canEnhance = false
+    var day = 0
     
     for p in allPipes {
         if uf.connected(p.from, p.to) {
             if p.isActive {
-                needDiactivate[p.name] = p
+                if inactivePipes[p.name] == nil {
+                    day += 1
+                }
             }
             continue
         }
         uf.union(p.from, p.to)
-        mstPipes.append(p)
+        //        mstPipes.append(p)
         minCost += p.cost
-        if D <= p.cost {
-            canEnhance = true
+        if !canEnhance {
+            if D <= p.cost {
+                canEnhance = true
+            }
         }
     }
     
@@ -161,15 +163,5 @@ func MCF () -> Int {
         minCost -= D
     }
     
-    var day = 0
-    
-
-    for p in needDiactivate {
-        if inactivePipes[p.key] == nil {
-            day += 1
-        }
-    }
-    
-
     return minCost < originalCost ? day : 0
 }

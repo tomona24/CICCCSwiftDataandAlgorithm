@@ -420,6 +420,26 @@
 		628734C124C7363600D9E67F /* LCA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LCA; sourceTree = BUILT_PRODUCTS_DIR; };
 		628734C324C7363600D9E67F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		628734C824C7364700D9E67F /* LCA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCA.swift; sourceTree = "<group>"; };
+		628D3B5C24E04C3B00F3C38E /* lca500.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca500.in; sourceTree = "<group>"; };
+		628D3B5D24E04C3B00F3C38E /* lca50000.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca50000.in; sourceTree = "<group>"; };
+		628D3B5E24E04C3B00F3C38E /* lca400.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca400.in; sourceTree = "<group>"; };
+		628D3B5F24E04C3B00F3C38E /* lca300.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca300.in; sourceTree = "<group>"; };
+		628D3B6024E04C3B00F3C38E /* lca10000.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca10000.in; sourceTree = "<group>"; };
+		628D3B6124E04C3B00F3C38E /* lca2500.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca2500.out; sourceTree = "<group>"; };
+		628D3B6224E04C3B00F3C38E /* lca10000.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca10000.out; sourceTree = "<group>"; };
+		628D3B6324E04C3B00F3C38E /* lca1000.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca1000.in; sourceTree = "<group>"; };
+		628D3B6424E04C3B00F3C38E /* lca200.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca200.in; sourceTree = "<group>"; };
+		628D3B6524E04C3B00F3C38E /* lca500.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca500.out; sourceTree = "<group>"; };
+		628D3B6624E04C3B00F3C38E /* lca25000.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca25000.in; sourceTree = "<group>"; };
+		628D3B6724E04C3B00F3C38E /* lca50000.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca50000.out; sourceTree = "<group>"; };
+		628D3B6824E04C3B00F3C38E /* lca1000.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca1000.out; sourceTree = "<group>"; };
+		628D3B6924E04C3B00F3C38E /* lca100.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca100.in; sourceTree = "<group>"; };
+		628D3B6A24E04C3B00F3C38E /* lca2500.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca2500.in; sourceTree = "<group>"; };
+		628D3B6B24E04C3B00F3C38E /* lca300.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca300.out; sourceTree = "<group>"; };
+		628D3B6C24E04C3B00F3C38E /* lca100.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca100.out; sourceTree = "<group>"; };
+		628D3B6D24E04C3B00F3C38E /* lca400.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca400.out; sourceTree = "<group>"; };
+		628D3B6E24E04C3B00F3C38E /* lca25000.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca25000.out; sourceTree = "<group>"; };
+		628D3B6F24E04C3B00F3C38E /* lca200.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca200.out; sourceTree = "<group>"; };
 		628D3F2524D07A490010C480 /* Bridges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridges.swift; sourceTree = "<group>"; };
 		628D3F2824D0E6250010C480 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		628D3F2A24D1D5980010C480 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
@@ -881,9 +901,37 @@
 				628734C324C7363600D9E67F /* main.swift */,
 				628D3F2824D0E6250010C480 /* Stack.swift */,
 				628D3F2A24D1D5980010C480 /* Queue.swift */,
+				628D3B5B24E04C3B00F3C38E /* LCATestCases */,
 				628734C824C7364700D9E67F /* LCA.swift */,
 			);
 			path = LCA;
+			sourceTree = "<group>";
+		};
+		628D3B5B24E04C3B00F3C38E /* LCATestCases */ = {
+			isa = PBXGroup;
+			children = (
+				628D3B5C24E04C3B00F3C38E /* lca500.in */,
+				628D3B5D24E04C3B00F3C38E /* lca50000.in */,
+				628D3B5E24E04C3B00F3C38E /* lca400.in */,
+				628D3B5F24E04C3B00F3C38E /* lca300.in */,
+				628D3B6024E04C3B00F3C38E /* lca10000.in */,
+				628D3B6124E04C3B00F3C38E /* lca2500.out */,
+				628D3B6224E04C3B00F3C38E /* lca10000.out */,
+				628D3B6324E04C3B00F3C38E /* lca1000.in */,
+				628D3B6424E04C3B00F3C38E /* lca200.in */,
+				628D3B6524E04C3B00F3C38E /* lca500.out */,
+				628D3B6624E04C3B00F3C38E /* lca25000.in */,
+				628D3B6724E04C3B00F3C38E /* lca50000.out */,
+				628D3B6824E04C3B00F3C38E /* lca1000.out */,
+				628D3B6924E04C3B00F3C38E /* lca100.in */,
+				628D3B6A24E04C3B00F3C38E /* lca2500.in */,
+				628D3B6B24E04C3B00F3C38E /* lca300.out */,
+				628D3B6C24E04C3B00F3C38E /* lca100.out */,
+				628D3B6D24E04C3B00F3C38E /* lca400.out */,
+				628D3B6E24E04C3B00F3C38E /* lca25000.out */,
+				628D3B6F24E04C3B00F3C38E /* lca200.out */,
+			);
+			path = LCATestCases;
 			sourceTree = "<group>";
 		};
 		628D3F3124D1E1F90010C480 /* Greedy */ = {

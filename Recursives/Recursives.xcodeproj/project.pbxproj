@@ -52,6 +52,8 @@
 		628D3F6A24D27ACA0010C480 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F6924D27ACA0010C480 /* Stack.swift */; };
 		628D3F6D24D27AF20010C480 /* CourseSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F6C24D27AF20010C480 /* CourseSchedule.swift */; };
 		628D3F6F24D2813A0010C480 /*  CourseScheduleII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F6E24D2813A0010C480 /*  CourseScheduleII.swift */; };
+		628FB34624DDD96400F8565E /* ClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628FB34524DDD96400F8565E /* ClimbingStairs.swift */; };
+		628FB34824DDDF0600F8565E /* MakeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628FB34724DDDF0600F8565E /* MakeOne.swift */; };
 		62A6436A24CFED3D00DCDBDF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6436924CFED3D00DCDBDF /* main.swift */; };
 		62A6437024CFED4C00DCDBDF /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6436F24CFED4C00DCDBDF /* UF.swift */; };
 		62C3B14124B78A8A001FB9D3 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3B13E24B78A8A001FB9D3 /* Board.swift */; };
@@ -431,6 +433,8 @@
 		628D3F6924D27ACA0010C480 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		628D3F6C24D27AF20010C480 /* CourseSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSchedule.swift; sourceTree = "<group>"; };
 		628D3F6E24D2813A0010C480 /*  CourseScheduleII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " CourseScheduleII.swift"; sourceTree = "<group>"; };
+		628FB34524DDD96400F8565E /* ClimbingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingStairs.swift; sourceTree = "<group>"; };
+		628FB34724DDDF0600F8565E /* MakeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOne.swift; sourceTree = "<group>"; };
 		62A6436724CFED3D00DCDBDF /* UnionFind */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnionFind; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A6436924CFED3D00DCDBDF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		62A6436F24CFED4C00DCDBDF /* UF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
@@ -899,6 +903,7 @@
 			isa = PBXGroup;
 			children = (
 				628D3F6224D27ABA0010C480 /* main.swift */,
+				628FB34424DDD95800F8565E /* DP */,
 				628FB34024DDAD0D00F8565E /* New Group */,
 				6273302B24DAFBAE00FF9350 /* IndexPriorityQueue.swift */,
 				6273303124DC553E00FF9350 /* mcf */,
@@ -928,6 +933,15 @@
 				6273309E24DC693400FF9350 /* CheapestFlightsWithinKStops.swift */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		628FB34424DDD95800F8565E /* DP */ = {
+			isa = PBXGroup;
+			children = (
+				628FB34524DDD96400F8565E /* ClimbingStairs.swift */,
+				628FB34724DDDF0600F8565E /* MakeOne.swift */,
+			);
+			path = DP;
 			sourceTree = "<group>";
 		};
 		62A6436824CFED3D00DCDBDF /* UnionFind */ = {
@@ -1452,9 +1466,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6273309F24DC693400FF9350 /* CheapestFlightsWithinKStops.swift in Sources */,
+				628FB34624DDD96400F8565E /* ClimbingStairs.swift in Sources */,
 				628D3F6F24D2813A0010C480 /*  CourseScheduleII.swift in Sources */,
 				6273309D24DC66AF00FF9350 /* NetworkDelayTime.swift in Sources */,
 				628D3F6324D27ABA0010C480 /* main.swift in Sources */,
+				628FB34824DDDF0600F8565E /* MakeOne.swift in Sources */,
 				6273302C24DAFBAE00FF9350 /* IndexPriorityQueue.swift in Sources */,
 				628D3F6D24D27AF20010C480 /* CourseSchedule.swift in Sources */,
 				628D3F6A24D27ACA0010C480 /* Stack.swift in Sources */,

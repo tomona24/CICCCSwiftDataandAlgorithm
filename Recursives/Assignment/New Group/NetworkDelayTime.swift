@@ -44,9 +44,9 @@ func networkDelayTime(_ times: [[Int]], _ N: Int, _ K: Int) -> Int {
             if costs[to] > costs[nodeFrom] + cost {
                 print("!")
                 costs[to] = costs[nodeFrom] + cost
-                q.append(contentsOf: graph[to])
                 print(q)
             }
+        q.append(contentsOf: graph[to])
     }
     
 

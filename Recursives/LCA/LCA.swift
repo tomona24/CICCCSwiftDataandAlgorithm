@@ -8,64 +8,137 @@
 
 import Foundation
 
-
 func LCA() {
     let N = Int(readLine()!)!
-    var tree = [[Int]](repeating: [Int](), count: N)
-    var depthTree = [Int](repeating: -1, count: N)
+    var tree = [[Int]](repeating: [Int](), count: N + 1)
+    var check = [Bool] (repeating: false, count: N + 1)
+    var depth = [Int](repeating: 0, count: N + 1)
+    var parents = [Int](repeating: -1, count: N + 1)
     
-    for _ in 0..<N {
-        let node = readLine()!.split(separator: " ").map{ Int(String($0))!}
-        let left = node[0]
-        let right = node[1]
+
+    for _ in 1..<N {
+        let m = readLine()!.split(separator: " ").map{ Int(String($0))! }
+        let left = m[0]
+        let right = m[1]
         tree[left].append(right)
         tree[right].append(left)
     }
     
-    let M = Int(readLine()!)!
-    var pairNodes = [[Int]]()
-    for _ in 0..<M {
-        let line = readLine()!.split(separator: " ").map { Int(String($0))!}
-        pairNodes.append([line[0], line[1]])
-    }
-    
-    func dfs (start: Int, depth: Int, treeList: inout [[Int]], depthTree: inout [Int] ) {
-        depthTree[start] = depth
-        for v in treeList[start] {
-            if depthTree[v] != -1 {
-                dfs(start: v, depth: depth + 1, treeList: &treeList, depthTree: &depthTree)
+    func bfs (root: Int, tree: [[Int]]) {
+        check[root] = true
+        var q = [Int]()
+        q.append(root)
+        
+        while !q.isEmpty {
+            let p = q.removeFirst()
+            for v in tree[p] {
+                if !check[v] {
+                    check[v] = true
+                    depth[v] = depth[p] + 1
+                    parents[v] = p
+                    q.append(v)
+                }
             }
         }
     }
+    
+    bfs(root: 1, tree: tree)
+    
+    var numOfm = Int(readLine()!)!
+    
+    for _ in 0..<numOfm {
+        let m = readLine()!.split(separator: " ").map{ Int($0)!}
+        var deep = m[0]
+        var shallow = m[1]
+        
+        var d : Int = depth[deep]
+        if depth[deep] < depth[shallow] {
+            swap(&deep, &shallow)
+            d = depth[deep]
+        }
+        
+        while depth[deep] != depth[shallow] {
+//            for n in tree[deep] {
+//                if depth[n] == d - 1 {
+//                    deep = n
+//                    d -= 1
+//                }
+            deep = parents[deep]
+//            }
+        }
+        
+        // deep and shallow has same depth
+        
+        while deep != shallow {
+            deep = parents[deep]
+            shallow = parents[shallow]
+        }
+        
+        print(deep)
 
-    dfs(start: 1, depth: 0, treeList: &tree, depthTree: &depthTree)
-    
-    for i in 0..<M {
-        let nodes = pairNodes[i]
-        let p = nodes[0]
-        let q = nodes[1]
-        let pd = depthTree[p]
-        let qd = depthTree[q]
-        var deeper = pd > qd ? p : q
-        var shallower = pd < qd ? p : q
-        for i in 0..<tree[deeper].count {
-            if depthTree[tree[deeper][i]] == depthTree[deeper] - 1 {
-                deeper = tree[deeper][i]
-            }
-            
-            if depthTree[deeper] == depthTree[shallower] {
-                break;
-            }
-        }
-        
-        var que = Queue<Int>()
-        
-        
-        
     }
     
 }
 
+
+//
+//func LCA() {
+//    let N = Int(readLine()!)!
+//    var tree = [[Int]](repeating: [Int](), count: N)
+//    var depthTree = [Int](repeating: -1, count: N)
+//
+//    for _ in 0..<N {
+//        let node = readLine()!.split(separator: " ").map{ Int(String($0))!}
+//        let left = node[0]
+//        let right = node[1]
+//        tree[left].append(right)
+//        tree[right].append(left)
+//    }
+//
+//    let M = Int(readLine()!)!
+//    var pairNodes = [[Int]]()
+//    for _ in 0..<M {
+//        let line = readLine()!.split(separator: " ").map { Int(String($0))!}
+//        pairNodes.append([line[0], line[1]])
+//    }
+//
+//    func dfs (start: Int, depth: Int, treeList: inout [[Int]], depthTree: inout [Int] ) {
+//        depthTree[start] = depth
+//        for v in treeList[start] {
+//            if depthTree[v] != -1 {
+//                dfs(start: v, depth: depth + 1, treeList: &treeList, depthTree: &depthTree)
+//            }
+//        }
+//    }
+//
+//    dfs(start: 1, depth: 0, treeList: &tree, depthTree: &depthTree)
+//
+//    for i in 0..<M {
+//        let nodes = pairNodes[i]
+//        let p = nodes[0]
+//        let q = nodes[1]
+//        let pd = depthTree[p]
+//        let qd = depthTree[q]
+//        var deeper = pd > qd ? p : q
+//        var shallower = pd < qd ? p : q
+//        for i in 0..<tree[deeper].count {
+//            if depthTree[tree[deeper][i]] == depthTree[deeper] - 1 {
+//                deeper = tree[deeper][i]
+//            }
+//
+//            if depthTree[deeper] == depthTree[shallower] {
+//                break;
+//            }
+//        }
+//
+//        var que = Queue<Int>()
+//
+//
+//
+//    }
+//
+//}
+//
 
 
 

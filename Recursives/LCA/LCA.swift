@@ -45,7 +45,7 @@ func LCA() {
     bfs(root: 1, tree: tree)
     
     var numOfm = Int(readLine()!)!
-    
+
     for _ in 0..<numOfm {
         let m = readLine()!.split(separator: " ").map{ Int($0)!}
         var deep = m[0]
@@ -75,9 +75,9 @@ func LCA() {
         }
         
         print(deep)
-
+        
     }
-    
+
 }
 
 

@@ -7,17 +7,17 @@
 //
 
 import Foundation
-
-let diaTree = """
-5
-1 3 2 -1
-2 4 4 -1
-3 1 2 4 3 -1
-4 2 4 3 3 5 6 -1
-5 4 6 -1
-"""
-
-diameter(tree: diaTree)
+//
+//let diaTree = """
+//5
+//1 3 2 -1
+//2 4 4 -1
+//3 1 2 4 3 -1
+//4 2 4 3 3 5 6 -1
+//5 4 6 -1
+//"""
+//
+diameter()
 
 let whoTree = """
 12
@@ -34,4 +34,4 @@ let whoTree = """
 6 12
 """
 
-whoIsMyParent(tree: whoTree)
+//whoIsMyParent()

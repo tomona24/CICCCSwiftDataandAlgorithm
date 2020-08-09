@@ -10,25 +10,25 @@ import Foundation
 
 var treeArr :[[[Int]]] = [[[Int]]].init()
 
-func diameter(tree : String) {
-    let n = Int(String(tree.first!))!
-    let nodeInfo = tree.suffix(from: tree.index(after: tree.index(after: tree.startIndex))).split(separator: "\n").map{$0.split(separator: " ").map{Int($0)!}}
+func diameter() {
+    let n = Int(readLine()!)!
+//    let n = Int(String(tree.first!))!
+//    let nodeInfo = tree.suffix(from: tree.index(after: tree.index(after: tree.startIndex))).split(separator: "\n").map{$0.split(separator: " ").map{Int($0)!}}
     let visited: [Bool] = [Bool](repeating: false, count: n)
     var longest : Int = 0
     
     for i in 0..<n {
     treeArr.append([[Int]].init())
     var m = 1
-        while (nodeInfo[i][m] != -1) {
-            let next = nodeInfo[i][m]
-            let dis = nodeInfo[i][m + 1]
+        let nodeInfo = readLine()!.split(separator: " ").map {Int($0)!}
+        while (nodeInfo[m] != -1) {
+            let next = nodeInfo[m]
+            let dis = nodeInfo[m + 1]
             let node : [Int] = [next, dis]
             treeArr[i].append(node)
             m += 2
         }
     }
-    print(nodeInfo)
-    print(treeArr)
     
     for k in 1..<n {
         diameterHelper(nodeNo: k , currentRoute: 0, visited: visited, current: 0, longest: &longest, visitNum: 0)

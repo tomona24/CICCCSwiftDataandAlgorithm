@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 let lcaTree = """
 15
 1 2

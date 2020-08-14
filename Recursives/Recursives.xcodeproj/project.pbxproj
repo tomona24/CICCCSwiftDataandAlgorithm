@@ -41,6 +41,7 @@
 		628734BB24C6D59400D9E67F /* WhoIsMyParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628734BA24C6D59300D9E67F /* WhoIsMyParent.swift */; };
 		628734C424C7363600D9E67F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628734C324C7363600D9E67F /* main.swift */; };
 		628734C924C7364700D9E67F /* LCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628734C824C7364700D9E67F /* LCA.swift */; };
+		628D3B7324E1A3AD00F3C38E /* ProblemSet(DP).swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3B7224E1A3AD00F3C38E /* ProblemSet(DP).swift */; };
 		628D3F2624D07A490010C480 /* Bridges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F2524D07A490010C480 /* Bridges.swift */; };
 		628D3F2924D0E6250010C480 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F2824D0E6250010C480 /* Stack.swift */; };
 		628D3F2B24D1D5980010C480 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D3F2A24D1D5980010C480 /* Queue.swift */; };
@@ -59,6 +60,8 @@
 		62C3B14124B78A8A001FB9D3 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3B13E24B78A8A001FB9D3 /* Board.swift */; };
 		62C3B14224B78A8A001FB9D3 /* QueensSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3B14024B78A8A001FB9D3 /* QueensSolver.swift */; };
 		62DFCC8B24B449B000A8FD4C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DFCC8A24B449B000A8FD4C /* main.swift */; };
+		62EAD2BF24E58FF0008CF833 /* DecodeWays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EAD2BE24E58FF0008CF833 /* DecodeWays.swift */; };
+		62EAD2C224E5923E008CF833 /* MzimumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EAD2C124E5923E008CF833 /* MzimumSubarray.swift */; };
 		62FA3BB224A93CE70051F459 /* MyFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FA3BAF24A93CE70051F459 /* MyFileManager.swift */; };
 		62FA3BB324A93CE70051F459 /* MyFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FA3BAF24A93CE70051F459 /* MyFileManager.swift */; };
 		62FA3BB424A93CE70051F459 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FA3BB124A93CE70051F459 /* main.swift */; };
@@ -440,6 +443,7 @@
 		628D3B6D24E04C3B00F3C38E /* lca400.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca400.out; sourceTree = "<group>"; };
 		628D3B6E24E04C3B00F3C38E /* lca25000.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca25000.out; sourceTree = "<group>"; };
 		628D3B6F24E04C3B00F3C38E /* lca200.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lca200.out; sourceTree = "<group>"; };
+		628D3B7224E1A3AD00F3C38E /* ProblemSet(DP).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ProblemSet(DP).swift"; path = "Assignment/ProblemSet(DP).swift"; sourceTree = SOURCE_ROOT; };
 		628D3F2524D07A490010C480 /* Bridges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridges.swift; sourceTree = "<group>"; };
 		628D3F2824D0E6250010C480 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		628D3F2A24D1D5980010C480 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
@@ -462,6 +466,8 @@
 		62C3B14024B78A8A001FB9D3 /* QueensSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueensSolver.swift; sourceTree = "<group>"; };
 		62DFCC8824B449B000A8FD4C /* sort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sort; sourceTree = BUILT_PRODUCTS_DIR; };
 		62DFCC8A24B449B000A8FD4C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		62EAD2BE24E58FF0008CF833 /* DecodeWays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeWays.swift; sourceTree = "<group>"; };
+		62EAD2C124E5923E008CF833 /* MzimumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MzimumSubarray.swift; sourceTree = "<group>"; };
 		62FA3BA024A93BAD0051F459 /* Crawl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Crawl; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FA3BA824A93CE70051F459 /* MiniProject1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MiniProject1.xcodeproj; path = "../../Swift/swift-ciccc/MiniProject1/MiniProject1.xcodeproj"; sourceTree = "<group>"; };
 		62FA3BAF24A93CE70051F459 /* MyFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFileManager.swift; sourceTree = "<group>"; };
@@ -988,6 +994,9 @@
 			children = (
 				628FB34524DDD96400F8565E /* ClimbingStairs.swift */,
 				628FB34724DDDF0600F8565E /* MakeOne.swift */,
+				628D3B7224E1A3AD00F3C38E /* ProblemSet(DP).swift */,
+				62EAD2BE24E58FF0008CF833 /* DecodeWays.swift */,
+				62EAD2C124E5923E008CF833 /* MzimumSubarray.swift */,
 			);
 			path = DP;
 			sourceTree = "<group>";
@@ -1515,13 +1524,16 @@
 			files = (
 				6273309F24DC693400FF9350 /* CheapestFlightsWithinKStops.swift in Sources */,
 				628FB34624DDD96400F8565E /* ClimbingStairs.swift in Sources */,
+				62EAD2BF24E58FF0008CF833 /* DecodeWays.swift in Sources */,
 				628D3F6F24D2813A0010C480 /*  CourseScheduleII.swift in Sources */,
 				6273309D24DC66AF00FF9350 /* NetworkDelayTime.swift in Sources */,
 				628D3F6324D27ABA0010C480 /* main.swift in Sources */,
 				628FB34824DDDF0600F8565E /* MakeOne.swift in Sources */,
+				62EAD2C224E5923E008CF833 /* MzimumSubarray.swift in Sources */,
 				6273302C24DAFBAE00FF9350 /* IndexPriorityQueue.swift in Sources */,
 				628D3F6D24D27AF20010C480 /* CourseSchedule.swift in Sources */,
 				628D3F6A24D27ACA0010C480 /* Stack.swift in Sources */,
+				628D3B7324E1A3AD00F3C38E /* ProblemSet(DP).swift in Sources */,
 				6273303024DC435C00FF9350 /* MCF.swift in Sources */,
 				6273302924DAF94F00FF9350 /* MST.swift in Sources */,
 				6273302E24DB0B0100FF9350 /* UF.swift in Sources */,

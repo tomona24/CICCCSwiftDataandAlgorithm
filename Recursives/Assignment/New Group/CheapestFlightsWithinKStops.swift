@@ -7,60 +7,122 @@
     //
     
     import Foundation
-    
     func findCheapestPrice(_ n: Int, _ flights: [[Int]], _ src: Int, _ dst: Int, _ K: Int) -> Int {
+        
         struct Flight {
             let from: Int
             let to: Int
             let cost: Int
         }
+        
+        
+        var adj = [[Flight]](repeating: [Flight](), count: n)
         var costs = [Int](repeating: Int.max, count: n)
         var steps = [Int](repeating: -1, count: n)
         var check = [Bool](repeating: false, count: n)
         
-        var adj = [[Flight]](repeating: [Flight](), count: n)
-        
+
         for f in flights {
-            let from = f[0]
-            let to = f[1]
-            let cost = f[2]
-            adj[from].append(Flight(from: from, to: to, cost: cost))
+            let flight = Flight(from: f[0], to: f[1], cost: f[2])
+            adj[f[0]].append(flight)
         }
         
+//        var q = [Flight]()
+//        q.append(contentsOf: adj[src])
         costs[src] = 0
-        check[src] = true
-        
-        var q = [Flight]()
-        q.append(contentsOf: adj[src])
-        
-        while !q.isEmpty {
-            let current = q.removeFirst()
-            let from = current.from
-            let to = current.to
-            let cost = current.cost
-            
-            
-            if steps[from] + 1 < K || steps[from] + 1 == K && to == dst{
 
-                if costs[to] > costs[from] + cost {
-                    check[to] = true
-                    steps[to] = steps[from] + 1
-                    costs[to] = costs[from] + cost
-                    q.append(contentsOf: adj[to])
+        func dfs(start: Int, adj: inout [[Flight]], check: inout [Bool], costs: inout [Int], step: Int) {
+            check[start] = true
+            for flight in adj[start] {
+                if !check[flight.to] && step + 1 < K && costs[flight.to] > flight.cost + costs[flight.from] || !check[flight.to] && step + 1 == K && flight.to == dst && costs[flight.to] > flight.cost + costs[flight.from] {
+                    costs[flight.to] = flight.cost + costs[flight.from]
+                    steps[flight.to] = steps[flight.from] + 1
+                    dfs(start: flight.to, adj: &adj, check: &check, costs: &costs, step: step + 1)
                 }
+
             }
         }
+        dfs(start: src, adj: &adj, check: &check, costs: &costs, step: -1)
         
-        print(check)
-        print(costs)
+        
+//        while !q.isEmpty {
+//            let flight = q.removeFirst()
+//            let from = flight.from
+//            let to = flight.to
+//            let cost = flight.cost
+//
+////            if costs[to] > cost + costs[from] && steps[from] + 1 < K || costs[to] > cost + costs[from] && steps[from] + 1 == K && to == dst{
+////                check[to] = true
+////                costs[to] = cost + costs[from]
+////                steps[to] = steps[from] + 1
+////                q.append(contentsOf: adj[to])
+////            }
+//            for flight in adj[to] {
+//                check[to] = true
+//                costs[to] = cost + costs[from]
+//                steps[to] = steps[from] + 1
+//                q.append(contentsOf: adj[flight.to])
+//            }
+//        }
         print(steps)
-        
-        if check[dst] {
-            return costs[dst]
-        } else{
-            return -1
-        }
+        print(costs)
+        print(check)
+        return check[dst] == true ? costs[dst] : -1
     }
+    
+    //    func findCheapestPrice(_ n: Int, _ flights: [[Int]], _ src: Int, _ dst: Int, _ K: Int) -> Int {
+    //        struct Flight {
+    //            let from: Int
+    //            let to: Int
+    //            let cost: Int
+    //        }
+    //        var costs = [Int](repeating: Int.max, count: n)
+    //        var steps = [Int](repeating: -1, count: n)
+    //        var check = [Bool](repeating: false, count: n)
+    //
+    //        var adj = [[Flight]](repeating: [Flight](), count: n)
+    //
+    //        for f in flights {
+    //            let from = f[0]
+    //            let to = f[1]
+    //            let cost = f[2]
+    //            adj[from].append(Flight(from: from, to: to, cost: cost))
+    //        }
+    //
+    //        costs[src] = 0
+    //        check[src] = true
+    //
+    //        var q = [Flight]()
+    //        q.append(contentsOf: adj[src])
+    //
+    //        while !q.isEmpty {
+    //            let current = q.removeFirst()
+    //            let from = current.from
+    //            let to = current.to
+    //            let cost = current.cost
+    //
+    //
+    //            if steps[from] + 1 < K || steps[from] + 1 == K && to == dst{
+    //
+    //                if costs[to] > costs[from] + cost {
+    //                    check[to] = true
+    //                    steps[to] = steps[from] + 1
+    //                    costs[to] = costs[from] + cost
+    //                    q.append(contentsOf: adj[to])
+    //                }
+    //            }
+    //        }
+    //
+    //        print(check)
+    //        print(costs)
+    //        print(steps)
+    //
+    //        if check[dst] {
+    //            return costs[dst]
+    //        } else{
+    //            return -1
+    //        }
+    //    }
     
     //
     //    func findCheapestPrice(_ n: Int, _ flights: [[Int]], _ src: Int, _ dst: Int, _ K: Int) -> Int {
